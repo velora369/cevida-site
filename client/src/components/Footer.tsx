@@ -58,21 +58,7 @@ export default function Footer() {
             <p className="text-gray-600 leading-relaxed text-lg" data-testid="footer-description">
               Exames de imagem com precisão e confiança em Santarém-PA
             </p>
-            <div className="flex items-center space-x-4">
-              {socialLinks.map((social, index) => (
-                <a 
-                  key={index}
-                  href={social.href} 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className={`${social.color} transition-all duration-300 hover:scale-110 p-3 rounded-2xl bg-gray-100 hover:bg-gray-200`}
-                  data-testid={`footer-${social.label.toLowerCase()}-link`}
-                  title={social.label}
-                >
-                  {social.icon}
-                </a>
-              ))}
-            </div>
+            
           </div>
 
           {/* Quick Links */}
