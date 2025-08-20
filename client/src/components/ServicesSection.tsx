@@ -31,7 +31,12 @@ export default function ServicesSection() {
     {
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 9a2 2 0 00-2 2v2a2 2 0 002 2m0 0h14m0 0v2a2 2 0 01-2 2H5a2 2 0 01-2-2v-2z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6a2 2 0 012-2h12a2 2 0 012 2v12a2 2 0 01-2 2H6a2 2 0 01-2-2V6z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 12h8" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v8" />
+          <circle cx="9" cy="9" r="1" fill="currentColor" />
+          <circle cx="15" cy="15" r="1" fill="currentColor" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 8l-8 8" />
         </svg>
       ),
       title: "Raio-X Digital",
