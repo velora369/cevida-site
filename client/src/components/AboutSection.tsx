@@ -177,13 +177,13 @@ export default function AboutSection() {
               
               {/* Carrossel Container */}
               <div className="relative bg-white/90 backdrop-blur-md p-6 rounded-3xl shadow-2xl border border-white/50">
-                <div className="relative w-full h-[350px] md:h-[450px] rounded-2xl overflow-hidden bg-gray-100">
+                <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100">
                   {doctorImages.map((image, index) => (
                     <img
                       key={index}
                       src={image.src}
                       alt={image.alt}
-                      className={`absolute inset-0 w-full h-full object-cover rounded-xl shadow-xl transition-all duration-700 ease-in-out ${
+                      className={`absolute inset-0 w-full h-full object-contain rounded-xl transition-all duration-700 ease-in-out ${
                         index === currentImageIndex 
                           ? 'opacity-100' 
                           : 'opacity-0'
@@ -197,7 +197,7 @@ export default function AboutSection() {
                     onClick={() => setCurrentImageIndex(
                       currentImageIndex === 0 ? doctorImages.length - 1 : currentImageIndex - 1
                     )}
-                    className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/90 backdrop-blur-sm text-clinic-red hover:bg-clinic-red hover:text-white p-3 rounded-full shadow-lg transition-all duration-300 opacity-0 group-hover:opacity-100"
+                    className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/95 backdrop-blur-sm text-clinic-red hover:bg-clinic-red hover:text-white p-3 rounded-full shadow-lg transition-all duration-300 opacity-0 group-hover:opacity-100 z-10"
                   >
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
                       <path d="M15 18l-6-6 6-6" />
@@ -207,7 +207,7 @@ export default function AboutSection() {
                     onClick={() => setCurrentImageIndex(
                       currentImageIndex === doctorImages.length - 1 ? 0 : currentImageIndex + 1
                     )}
-                    className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/90 backdrop-blur-sm text-clinic-red hover:bg-clinic-red hover:text-white p-3 rounded-full shadow-lg transition-all duration-300 opacity-0 group-hover:opacity-100"
+                    className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/95 backdrop-blur-sm text-clinic-red hover:bg-clinic-red hover:text-white p-3 rounded-full shadow-lg transition-all duration-300 opacity-0 group-hover:opacity-100 z-10"
                   >
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
                       <path d="M9 18l6-6-6-6" />
@@ -215,15 +215,15 @@ export default function AboutSection() {
                   </button>
 
                   {/* Indicadores */}
-                  <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2">
+                  <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2 z-10">
                     {doctorImages.map((_, index) => (
                       <button
                         key={index}
                         onClick={() => setCurrentImageIndex(index)}
-                        className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                        className={`w-3 h-3 rounded-full transition-all duration-300 shadow-md ${
                           index === currentImageIndex
                             ? 'bg-clinic-red scale-125'
-                            : 'bg-white/60 hover:bg-white/80'
+                            : 'bg-white/80 hover:bg-white'
                         }`}
                       />
                     ))}
