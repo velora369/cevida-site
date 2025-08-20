@@ -142,10 +142,12 @@ export const TrustIcon = ({ className = "", size = 24 }: IconProps) => (
     strokeLinejoin="round"
     className={className}
   >
-    <path d="M21 8.5c0-2.5-2-4.5-4.5-4.5S12 6 12 8.5c0 2.5 2 4.5 4.5 4.5S21 11 21 8.5z" />
-    <path d="M3 15.5c0-2.5 2-4.5 4.5-4.5S12 13 12 15.5c0 2.5-2 4.5-4.5 4.5S3 18 3 15.5z" />
-    <path d="M12 8.5L12 15.5" />
-    <path d="M9 12l6 0" />
+    <path d="M10 12H8c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h2" />
+    <path d="M14 12h2c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2h-2" />
+    <path d="M10 12v3c0 1.1.9 2 2 2s2-.9 2-2v-3" />
+    <path d="M10 12h4" />
+    <circle cx="8" cy="3" r="1" />
+    <circle cx="16" cy="3" r="1" />
   </svg>
 );
 
