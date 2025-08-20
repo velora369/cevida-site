@@ -40,7 +40,6 @@ export default function Footer() {
     <footer className="bg-white text-gray-800 py-16 relative overflow-hidden border-t border-gray-200" data-testid="footer">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-3">
-        <div className="absolute top-10 left-10 w-64 h-64 bg-clinic-red rounded-full blur-3xl"></div>
         <div className="absolute bottom-10 right-10 w-80 h-80 bg-gray-200 rounded-full blur-3xl"></div>
       </div>
 
