@@ -112,7 +112,7 @@ export default function ContactSection() {
     <section 
       id="contato" 
       ref={sectionRef}
-      className="py-16 md:py-24 bg-gradient-to-b from-gray-50/50 to-white relative overflow-hidden" 
+      className="py-16 md:py-24 bg-gradient-to-b from-clinic-red to-red-600 relative overflow-hidden" 
       data-testid="contact-section"
     >
       {/* Background Pattern */}
@@ -124,11 +124,11 @@ export default function ContactSection() {
       <div className="container mx-auto px-4 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-20 animate-on-scroll opacity-0">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6" data-testid="contact-title">
-            <span className="bg-gradient-to-r from-clinic-red to-red-500 bg-clip-text text-transparent">Contato</span> e Agendamento
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6" data-testid="contact-title">
+            Contato e Agendamento
           </h2>
-          <div className="w-32 h-1.5 bg-gradient-to-r from-clinic-red to-red-500 mx-auto rounded-full mb-6"></div>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <div className="w-32 h-1.5 bg-white/40 mx-auto rounded-full mb-6"></div>
+          <p className="text-xl text-white/90 max-w-3xl mx-auto leading-relaxed">
             Entre em contato conosco e agende seu exame com facilidade
           </p>
         </div>
@@ -136,7 +136,7 @@ export default function ContactSection() {
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-16">
           {/* Contact Information */}
           <div className="space-y-8 animate-on-scroll opacity-0">
-            <h3 className="text-3xl font-bold text-gray-800 mb-8" data-testid="contact-info-title">
+            <h3 className="text-3xl font-bold text-white mb-8" data-testid="contact-info-title">
               Informações de Contato
             </h3>
             
@@ -144,8 +144,8 @@ export default function ContactSection() {
               {contactInfo.map((contact, index) => (
                 <div key={index} className="group" data-testid={`contact-${index}`}>
                   <div className="relative">
-                    <div className="absolute -inset-1 bg-gradient-to-r from-clinic-red via-red-500 to-red-600 rounded-2xl blur-lg opacity-10 group-hover:opacity-20 transition-opacity duration-500"></div>
-                    <div className="relative bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-xl border border-white/50 hover:scale-105 transition-all duration-300">
+                    <div className="absolute -inset-1 bg-gradient-to-r from-white via-gray-200 to-gray-300 rounded-2xl blur-lg opacity-20 group-hover:opacity-30 transition-opacity duration-500"></div>
+                    <div className="relative bg-white/95 backdrop-blur-sm p-6 rounded-2xl shadow-2xl border border-white/70 hover:scale-105 transition-all duration-300">
                       <div className="flex items-start space-x-4">
                         <div className={`bg-gradient-to-r ${contact.gradient} text-white w-14 h-14 rounded-2xl flex items-center justify-center shadow-lg group-hover:rotate-12 transition-transform duration-300`}>
                           {contact.icon}
