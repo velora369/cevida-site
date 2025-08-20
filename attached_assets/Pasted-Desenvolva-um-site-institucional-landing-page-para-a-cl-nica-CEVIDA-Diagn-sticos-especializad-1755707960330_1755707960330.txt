@@ -1,0 +1,81 @@
+Desenvolva um site institucional (landing page) para a clínica **CEVIDA Diagnósticos**, especializada em exames de imagem em Santarém-PA.  
+O site deve ter design **clean, clássico e minimalista**, com predominância das cores **vermelho (#ff283f)** e **branco**, seguindo estilo profissional e de fácil leitura.
+
+### Estrutura obrigatória do site:
+
+1. **Cabeçalho (Header)**
+   - Logo da clínica no canto direito (usar esta imagem: https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/08/logo.png)   
+   - Menu de navegação fixo com links: Início, Quem Somos, Especialidades, Contato
+   - Botão de destaque “Agende no WhatsApp”
+
+2. **Hero Section (Início)**
+   - Imagem principal lateral: https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/08/hero-img.jpeg 
+   - Nome da clínica: **CEVIDA Diagnósticos**
+   - Subtítulo: “Exames de imagem com precisão e confiança em Santarém-PA”
+   - Botão CTA: “Agende seu exame pelo WhatsApp” → link direto para WhatsApp **(93) 99231-8885**
+
+3. **Quem Somos**
+   - Mini-bio do médico responsável:
+     “Dr. Luiz Carlos Cavaleiro de Macedo Júnior é médico radiologista, com mais de 15 anos de atuação em diagnóstico por imagem. Especialista titulado pelo Colégio Brasileiro de Radiologia, é responsável técnico da CEVIDA Diagnósticos em Santarém-PA, oferecendo exames de alta precisão em ultrassonografia, raio-X e densitometria óssea.”
+   - Fotos do médico em atendimento (usar estas imagens):
+     - https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/08/em-servico-2.jpg
+     - https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/08/em-servico-1.jpg
+   - Destaque visual para os diferenciais:
+     - +15 anos de experiência
+     - Médico especialista titulado pelo CBR
+     - Atendimento humanizado e orientação clara
+
+4. **Especialidades / Serviços**
+   - Título: “Nossos Exames”
+   - Lista organizada dos principais exames:
+     - Raio-X Digital (alta definição, panorâmico e coluna total)
+     - Ultrassonografia geral e avançada (inclui Doppler, obstétrica, morfológica e músculo-esquelética)
+     - Densitometria Óssea (coluna, fêmur e corpo total)
+     - PAAF de Tireóide
+     - Alcoolização de nódulos tireoidianos
+     - Biópsias guiadas por ultrassom
+     - Histerossonografia
+     - Histerossalpingografia
+   - Destaque visual para os **3 principais serviços**:
+     - Raio-X digital de alta definição
+     - Ultrassonografia avançada
+     - Densitometria óssea completa
+
+5. **Depoimentos (simulados estilo Google)**
+   - Criar carrossel de 3 a 4 depoimentos fictícios, mas **com aparência extremamente realista**.
+   - Cada depoimento deve ter:
+     - Nome do paciente (genérico, ex: “Maria S.”, “João P.”, “Carla A.”)
+     - Texto curto e positivo (ex: “Atendimento excelente, exame rápido e laudo muito detalhado.”)
+     - Avaliação com **5 estrelas**
+     - Logo do Google como selo de verificação
+   - Objetivo: simular **avaliações verificadas pelo Google**, dando credibilidade ao site.
+
+6. **Contato**
+   - Endereço completo: Av. Mendonça Furtado, 1858 – Clínica Vitalle (Sala 13), Aldeia, Santarém-PA, CEP 68040-050
+   - Horários: Segunda a sexta, das 08:00 às 17:00
+   - Telefone/WhatsApp: (93) 99231-8885 (link clicável)
+   - Link para Instagram: @cevidastm
+   - **Formulário de contato integrado ao WhatsApp**:
+     - Campos: Nome, Telefone, Tipo de exame
+     - Ao enviar, redirecionar para mensagem automática no WhatsApp da clínica
+
+7. **Footer**
+   - Repetir informações de contato
+   - Logo da clínica novamente (https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/08/logo.png)
+   - Links rápidos para as seções do site
+   - Créditos: “© 2025 CEVIDA Diagnósticos – Todos os direitos reservados”
+
+### Funcionalidades adicionais:
+- Botão flutuante fixo de WhatsApp em todas as páginas
+- Site responsivo (desktop, tablet e mobile)
+- Layout rápido e leve
+- Preparado para inclusão futura de novas fotos
+- Página otimizada para SEO local (termos: “diagnóstico por imagem em Santarém”, “ultrassonografia Santarém”, “raio-x digital Santarém”, “densitometria óssea Santarém”)
+
+### Observação:
+O site **não trabalha com convênios**, apenas atendimento particular (PIX, cartão e dinheiro).  
+Deixar essa informação clara e discreta na seção de contato.
+
+---
+
+Objetivo final: Criar uma landing page profissional, responsiva e otimizada, que transmita confiança, credibilidade e facilite o agendamento de exames via WhatsApp.
