@@ -13,10 +13,6 @@ export default function AboutSection() {
     {
       src: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/08/em-servico-1.jpg", 
       alt: "Dr. Luiz Carlos realizando exame de ultrassom"
-    },
-    {
-      src: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/08/hero-img.jpeg",
-      alt: "Dr. Luiz Carlos com equipamentos modernos"
     }
   ];
 
