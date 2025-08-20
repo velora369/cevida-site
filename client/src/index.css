@@ -72,6 +72,19 @@
   * {
     @apply border-border;
   }
+  
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Improved mobile spacing */
+  .container {
+    @apply px-4 sm:px-6 lg:px-8 xl:px-12;
+  }
 
   body {
     @apply font-sans antialiased bg-background text-foreground;
@@ -173,7 +186,32 @@
   .animate-slide-in-right {
     animation: slideInRight 0.8s ease-out forwards;
   }
-
+  
+  /* Responsive improvements */
+  @media (max-width: 640px) {
+    .text-responsive {
+      @apply text-base;
+    }
+    
+    .container {
+      @apply px-3;
+    }
+    
+    .space-y-responsive > * + * {
+      @apply mt-4;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .text-responsive {
+      @apply text-lg;
+    }
+    
+    .space-y-responsive > * + * {
+      @apply mt-6;
+    }
+  }
+  
   .animate-scale-in {
     animation: scaleIn 0.6s ease-out forwards;
   }

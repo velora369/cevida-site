@@ -26,7 +26,7 @@ export default function HeroSection() {
     <section 
       id="inicio" 
       ref={heroRef}
-      className="relative pt-24 pb-20 overflow-hidden bg-gradient-to-br from-white via-gray-50/50 to-clinic-gray/30 min-h-screen flex items-center"
+      className="relative pt-20 pb-16 md:pt-24 md:pb-20 overflow-hidden bg-gradient-to-br from-white via-gray-50/50 to-clinic-gray/30 min-h-screen flex items-center"
       data-testid="hero-section"
     >
       {/* Background Pattern */}
@@ -36,24 +36,24 @@ export default function HeroSection() {
       </div>
 
       <div className="container mx-auto px-4 py-12 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           {/* Content */}
           <div className="space-y-8 opacity-0 translate-y-8 transition-all duration-1000 ease-out" style={{animation: 'fadeInUp 1s ease-out forwards'}}>
             <div className="space-y-6">
-              <h1 className="text-5xl lg:text-6xl font-bold text-gray-800 leading-tight" data-testid="hero-title">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 leading-tight" data-testid="hero-title">
                 <span className="bg-gradient-to-r from-clinic-red via-red-500 to-red-600 bg-clip-text text-transparent">
                   CEVIDA
                 </span>
                 <br />
                 <span className="text-gray-800">Diagnósticos</span>
               </h1>
-              <p className="text-xl lg:text-2xl text-gray-600 leading-relaxed font-light" data-testid="hero-subtitle">
+              <p className="text-lg md:text-xl lg:text-2xl text-gray-600 leading-relaxed font-light" data-testid="hero-subtitle">
                 Exames de imagem com precisão e confiança em Santarém-PA
               </p>
             </div>
             
             {/* Features with modern icons */}
-            <div className="space-y-4">
+            <div className="space-y-6">
               {[
                 {
                   icon: (
@@ -82,13 +82,13 @@ export default function HeroSection() {
               ].map((feature, index) => (
                 <div 
                   key={index}
-                  className="flex items-center space-x-4 opacity-0 translate-x-8 transition-all duration-700 ease-out"
+                  className="flex items-start space-x-4 opacity-0 translate-x-8 transition-all duration-700 ease-out"
                   style={{animation: `slideInLeft 0.8s ${index * 0.2 + 0.5}s ease-out forwards`}}
                 >
-                  <div className="bg-gradient-to-r from-clinic-red to-red-500 text-white w-12 h-12 rounded-2xl flex items-center justify-center shadow-lg shadow-clinic-red/25 hover:scale-110 transition-transform duration-300">
+                  <div className="flex-shrink-0 bg-gradient-to-r from-clinic-red to-red-500 text-white w-12 h-12 rounded-2xl flex items-center justify-center shadow-lg shadow-clinic-red/25 hover:scale-110 transition-transform duration-300">
                     {feature.icon}
                   </div>
-                  <span className="text-gray-700 text-lg font-medium">{feature.text}</span>
+                  <span className="flex-1 text-gray-700 text-lg font-medium leading-relaxed pt-1">{feature.text}</span>
                 </div>
               ))}
             </div>

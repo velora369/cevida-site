@@ -61,7 +61,7 @@ export default function AboutSection() {
     <section 
       id="quem-somos" 
       ref={sectionRef}
-      className="py-24 bg-gradient-to-b from-white to-gray-50/50 relative overflow-hidden" 
+      className="py-16 md:py-24 bg-gradient-to-b from-white to-gray-50/50 relative overflow-hidden" 
       data-testid="about-section"
     >
       {/* Background Pattern */}
@@ -82,7 +82,7 @@ export default function AboutSection() {
           </p>
         </div>
         
-        <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center mb-12 md:mb-20">
           {/* Content */}
           <div className="space-y-8 animate-on-scroll opacity-0">
             <div className="space-y-6">
@@ -95,7 +95,7 @@ export default function AboutSection() {
             </div>
 
             {/* Key Features */}
-            <div className="space-y-4">
+            <div className="space-y-6">
               {[
                 {
                   icon: (
@@ -126,12 +126,12 @@ export default function AboutSection() {
                 }
               ].map((feature, index) => (
                 <div key={index} className="flex items-start space-x-4 group">
-                  <div className="bg-gradient-to-r from-clinic-red to-red-500 text-white w-12 h-12 rounded-2xl flex items-center justify-center shadow-lg shadow-clinic-red/25 group-hover:scale-110 transition-transform duration-300">
+                  <div className="flex-shrink-0 bg-gradient-to-r from-clinic-red to-red-500 text-white w-14 h-14 rounded-2xl flex items-center justify-center shadow-lg shadow-clinic-red/25 group-hover:scale-110 transition-transform duration-300">
                     {feature.icon}
                   </div>
-                  <div className="flex-1">
-                    <h4 className="font-semibold text-gray-800 mb-2">{feature.title}</h4>
-                    <p className="text-gray-600">{feature.description}</p>
+                  <div className="flex-1 min-w-0">
+                    <h4 className="font-semibold text-gray-800 mb-2 text-lg">{feature.title}</h4>
+                    <p className="text-gray-600 leading-relaxed">{feature.description}</p>
                   </div>
                 </div>
               ))}

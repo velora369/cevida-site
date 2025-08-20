@@ -112,7 +112,7 @@ export default function ContactSection() {
     <section 
       id="contato" 
       ref={sectionRef}
-      className="py-24 bg-gradient-to-b from-gray-50/50 to-white relative overflow-hidden" 
+      className="py-16 md:py-24 bg-gradient-to-b from-gray-50/50 to-white relative overflow-hidden" 
       data-testid="contact-section"
     >
       {/* Background Pattern */}
@@ -133,7 +133,7 @@ export default function ContactSection() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-16">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-16">
           {/* Contact Information */}
           <div className="space-y-8 animate-on-scroll opacity-0">
             <h3 className="text-3xl font-bold text-gray-800 mb-8" data-testid="contact-info-title">

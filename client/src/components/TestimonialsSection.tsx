@@ -57,7 +57,7 @@ export default function TestimonialsSection() {
   return (
     <section 
       ref={sectionRef}
-      className="py-24 bg-gradient-to-b from-white to-gray-50/50 relative overflow-hidden" 
+      className="py-16 md:py-24 bg-gradient-to-b from-white to-gray-50/50 relative overflow-hidden" 
       data-testid="testimonials-section"
     >
       {/* Background Pattern */}
@@ -79,7 +79,7 @@ export default function TestimonialsSection() {
         </div>
 
         {/* Testimonials Grid */}
-        <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8">
           {testimonials.map((testimonial, index) => (
             <div 
               key={index}

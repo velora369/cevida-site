@@ -78,7 +78,7 @@ export default function ServicesSection() {
     <section 
       id="especialidades" 
       ref={sectionRef}
-      className="py-24 bg-gradient-to-b from-gray-50/50 to-white relative overflow-hidden" 
+      className="py-16 md:py-24 bg-gradient-to-b from-gray-50/50 to-white relative overflow-hidden" 
       data-testid="services-section"
     >
       {/* Background Pattern */}
@@ -100,7 +100,7 @@ export default function ServicesSection() {
         </div>
 
         {/* Main Services Highlight */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-12 md:mb-20">
           {mainServices.map((service, index) => (
             <div 
               key={index}
@@ -150,25 +150,25 @@ export default function ServicesSection() {
               <div className="grid md:grid-cols-2 gap-8">
                 <div className="space-y-6">
                   {allServices.slice(0, 4).map((service, index) => (
-                    <div key={index} className="flex items-center space-x-4 group" data-testid={`service-item-${index}`}>
-                      <div className="bg-gradient-to-r from-clinic-red to-red-500 text-white w-8 h-8 rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
-                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div key={index} className="flex items-start space-x-4 group" data-testid={`service-item-${index}`}>
+                      <div className="bg-gradient-to-r from-clinic-red to-red-500 text-white w-10 h-10 rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                         </svg>
                       </div>
-                      <span className="text-gray-700 text-lg">{service}</span>
+                      <span className="text-gray-700 text-lg leading-relaxed pt-1 flex-1">{service}</span>
                     </div>
                   ))}
                 </div>
                 <div className="space-y-6">
                   {allServices.slice(4).map((service, index) => (
-                    <div key={index + 4} className="flex items-center space-x-4 group" data-testid={`service-item-${index + 4}`}>
-                      <div className="bg-gradient-to-r from-clinic-red to-red-500 text-white w-8 h-8 rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
-                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div key={index + 4} className="flex items-start space-x-4 group" data-testid={`service-item-${index + 4}`}>
+                      <div className="bg-gradient-to-r from-clinic-red to-red-500 text-white w-10 h-10 rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                         </svg>
                       </div>
-                      <span className="text-gray-700 text-lg">{service}</span>
+                      <span className="text-gray-700 text-lg leading-relaxed pt-1 flex-1">{service}</span>
                     </div>
                   ))}
                 </div>
