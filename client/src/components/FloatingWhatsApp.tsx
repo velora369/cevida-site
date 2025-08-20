@@ -28,10 +28,10 @@ export default function FloatingWhatsApp() {
         onMouseLeave={() => setIsHovered(false)}
       >
         {/* Glow effect */}
-        <div className="absolute -inset-2 bg-gradient-to-r from-green-400 to-green-600 rounded-full blur-xl opacity-30 group-hover:opacity-50 transition-opacity duration-500 animate-pulse"></div>
+        <div className="absolute -inset-2 bg-gradient-to-r from-clinic-red to-red-600 rounded-full blur-xl opacity-30 group-hover:opacity-50 transition-opacity duration-500 animate-pulse"></div>
         
         {/* Main button */}
-        <div className="relative bg-gradient-to-r from-green-500 to-green-600 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl hover:shadow-green-500/25 transition-all duration-300 hover:scale-110 group-hover:rotate-12">
+        <div className="relative bg-gradient-to-r from-clinic-red to-red-600 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl hover:shadow-clinic-red/25 transition-all duration-300 hover:scale-110 group-hover:rotate-12">
           <svg 
             className="w-8 h-8 group-hover:scale-110 transition-transform duration-300" 
             fill="currentColor" 
