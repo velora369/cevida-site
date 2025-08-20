@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import { StarRatingIcon, MedicalCheckIcon, ExperienceIcon, HeartCareIcon } from "./CustomIcons";
 
 export default function HeroSection() {
   const heroRef = useRef<HTMLDivElement>(null);
@@ -56,39 +57,27 @@ export default function HeroSection() {
             <div className="space-y-6">
               {[
                 {
-                  icon: (
-                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                  ),
+                  icon: <MedicalCheckIcon size={24} className="text-white" />,
                   text: "Médico especialista titulado pelo CBR"
                 },
                 {
-                  icon: (
-                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                  ),
+                  icon: <ExperienceIcon size={24} className="text-white" />,
                   text: "+15 anos de experiência"
                 },
                 {
-                  icon: (
-                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                    </svg>
-                  ),
+                  icon: <HeartCareIcon size={24} className="text-white" />,
                   text: "Atendimento humanizado"
                 }
               ].map((feature, index) => (
                 <div 
                   key={index}
-                  className="flex items-start space-x-4 opacity-0 translate-x-8 transition-all duration-700 ease-out"
-                  style={{animation: `slideInLeft 0.8s ${index * 0.2 + 0.5}s ease-out forwards`}}
+                  className="flex items-start space-x-4 opacity-0 translate-x-8 animate-on-scroll"
+                  style={{animation: `slideInLeft 1s ${index * 0.2 + 0.5}s cubic-bezier(0.4, 0, 0.2, 1) forwards`}}
                 >
-                  <div className="flex-shrink-0 bg-gradient-to-r from-clinic-red to-red-500 text-white w-12 h-12 rounded-2xl flex items-center justify-center shadow-lg shadow-clinic-red/25 hover:scale-110 transition-transform duration-300">
+                  <div className="flex-shrink-0 bg-gradient-to-br from-clinic-red via-red-500 to-red-600 text-white w-14 h-14 rounded-2xl flex items-center justify-center shadow-lg shadow-clinic-red/30 hover-scale hover:shadow-xl">
                     {feature.icon}
                   </div>
-                  <span className="flex-1 text-gray-700 text-lg font-medium leading-relaxed pt-1">{feature.text}</span>
+                  <span className="flex-1 text-gray-700 dark:text-gray-200 text-lg font-medium leading-relaxed pt-2">{feature.text}</span>
                 </div>
               ))}
             </div>
@@ -146,10 +135,13 @@ export default function HeroSection() {
             </div>
             
             {/* Floating Stats Cards */}
-            <div className="absolute -top-8 -right-8 bg-white/90 backdrop-blur-md p-4 rounded-2xl shadow-xl border border-white/50 hidden lg:block hover:scale-105 transition-transform duration-300">
+            <div className="absolute -top-8 -right-8 glass-card p-4 hover-scale hidden lg:block">
               <div className="text-center">
-                <p className="text-2xl font-bold text-clinic-red">5⭐</p>
-                <p className="text-sm text-gray-600">Avaliação</p>
+                <div className="flex items-center justify-center mb-2">
+                  <StarRatingIcon className="text-clinic-red" size={28} />
+                  <span className="ml-1 text-2xl font-bold text-clinic-red">5</span>
+                </div>
+                <p className="text-sm text-gray-600 dark:text-gray-300">Avaliação</p>
               </div>
             </div>
           </div>

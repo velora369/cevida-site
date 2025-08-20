@@ -62,9 +62,16 @@ export default {
           ring: "var(--sidebar-ring)",
         },
         // Custom CEVIDA colors
-        'clinic-red': 'hsl(356, 100%, 57%)',
-        'clinic-red-dark': 'hsl(356, 100%, 52%)',
-        'clinic-gray': 'hsl(210, 40%, 97%)',
+        'clinic-red': {
+          DEFAULT: 'var(--clinic-red)',
+          hover: 'var(--clinic-red-hover)',
+          light: 'var(--clinic-red-light)',
+          dark: 'var(--clinic-red-dark)',
+        },
+        'clinic-gray': {
+          DEFAULT: 'var(--clinic-gray)',
+          dark: 'var(--clinic-gray-dark)',
+        },
       },
       fontFamily: {
         sans: ['Inter', 'var(--font-sans)'],

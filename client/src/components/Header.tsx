@@ -24,7 +24,11 @@ export default function Header() {
   const navItems = [
     { id: 'inicio', label: 'Início' },
     { id: 'quem-somos', label: 'Quem Somos' },
+    { id: 'beneficios', label: 'Benefícios' },
     { id: 'especialidades', label: 'Especialidades' },
+    { id: 'recursos', label: 'Recursos' },
+    { id: 'planos', label: 'Planos' },
+    { id: 'faq', label: 'FAQ' },
     { id: 'contato', label: 'Contato' }
   ];
 
@@ -53,18 +57,34 @@ export default function Header() {
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8" data-testid="desktop-nav">
+          <nav className="hidden lg:flex items-center space-x-6" data-testid="desktop-nav">
             {navItems.map((item) => (
               <button 
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className={`relative font-medium transition-all duration-300 hover:text-clinic-red group ${
-                  isScrolled ? 'text-gray-800' : 'text-white'
+                className={`relative font-medium text-sm transition-all duration-300 hover:text-clinic-red group hover-lift px-2 py-1 rounded-lg ${
+                  isScrolled ? 'text-gray-800 hover:bg-clinic-red-light' : 'text-white hover:bg-white/10'
                 }`}
                 data-testid={`nav-${item.id}`}
               >
                 {item.label}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-clinic-red to-red-500 transition-all duration-300 group-hover:w-full rounded-full"></span>
+                <span className="absolute -bottom-1 left-2 right-2 h-0.5 bg-gradient-to-r from-clinic-red to-red-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 rounded-full"></span>
+              </button>
+            ))}
+          </nav>
+          
+          {/* Medium screens navigation */}
+          <nav className="hidden md:flex lg:hidden items-center space-x-4">
+            {navItems.slice(0, 4).map((item) => (
+              <button 
+                key={item.id}
+                onClick={() => scrollToSection(item.id)}
+                className={`relative font-medium text-sm transition-all duration-300 hover:text-clinic-red group px-2 py-1 rounded-lg ${
+                  isScrolled ? 'text-gray-800' : 'text-white'
+                }`}
+              >
+                {item.label}
+                <span className="absolute -bottom-1 left-2 right-2 h-0.5 bg-clinic-red scale-x-0 group-hover:scale-x-100 transition-transform duration-300 rounded-full"></span>
               </button>
             ))}
           </nav>
@@ -88,7 +108,7 @@ export default function Header() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden p-2 rounded-lg hover:bg-gray-100/10 transition-colors duration-300"
+            className="lg:hidden p-2 rounded-lg hover:bg-gray-100/10 transition-colors duration-300"
             data-testid="mobile-menu-button"
             aria-label="Toggle mobile menu"
           >
