@@ -37,11 +37,11 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white py-16 relative overflow-hidden" data-testid="footer">
+    <footer className="bg-white text-gray-800 py-16 relative overflow-hidden border-t border-gray-200" data-testid="footer">
       {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-5">
+      <div className="absolute inset-0 opacity-3">
         <div className="absolute top-10 left-10 w-64 h-64 bg-clinic-red rounded-full blur-3xl"></div>
-        <div className="absolute bottom-10 right-10 w-80 h-80 bg-blue-400 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-10 right-10 w-80 h-80 bg-gray-200 rounded-full blur-3xl"></div>
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
@@ -52,11 +52,11 @@ export default function Footer() {
               <img 
                 src="https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/08/logo.png" 
                 alt="CEVIDA Diagnósticos Logo" 
-                className="h-16 w-auto brightness-0 invert group-hover:scale-105 transition-transform duration-300"
+                className="h-16 w-auto group-hover:scale-105 transition-transform duration-300"
                 data-testid="footer-logo"
               />
             </div>
-            <p className="text-gray-300 leading-relaxed text-lg" data-testid="footer-description">
+            <p className="text-gray-600 leading-relaxed text-lg" data-testid="footer-description">
               Exames de imagem com precisão e confiança em Santarém-PA
             </p>
             <div className="flex items-center space-x-4">
@@ -66,7 +66,7 @@ export default function Footer() {
                   href={social.href} 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className={`${social.color} transition-all duration-300 hover:scale-110 p-3 rounded-2xl bg-white/5 backdrop-blur-sm hover:bg-white/10`}
+                  className={`${social.color} transition-all duration-300 hover:scale-110 p-3 rounded-2xl bg-gray-100 hover:bg-gray-200`}
                   data-testid={`footer-${social.label.toLowerCase()}-link`}
                   title={social.label}
                 >
@@ -78,7 +78,7 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div className="space-y-6">
-            <h4 className="text-2xl font-bold mb-6" data-testid="footer-quick-links-title">
+            <h4 className="text-2xl font-bold mb-6 text-gray-800" data-testid="footer-quick-links-title">
               Links Rápidos
             </h4>
             <ul className="space-y-4">
@@ -86,7 +86,7 @@ export default function Footer() {
                 <li key={link.id}>
                   <button 
                     onClick={() => scrollToSection(link.id)}
-                    className="text-gray-300 hover:text-white transition-all duration-300 text-lg hover:translate-x-2 block w-full text-left group"
+                    className="text-gray-600 hover:text-gray-800 transition-all duration-300 text-lg hover:translate-x-2 block w-full text-left group"
                     data-testid={`footer-link-${link.id}`}
                   >
                     <span className="flex items-center space-x-3">
@@ -103,10 +103,10 @@ export default function Footer() {
 
           {/* Contact Information */}
           <div className="space-y-6">
-            <h4 className="text-2xl font-bold mb-6" data-testid="footer-contact-title">
+            <h4 className="text-2xl font-bold mb-6 text-gray-800" data-testid="footer-contact-title">
               Contato
             </h4>
-            <div className="space-y-4 text-gray-300" data-testid="footer-contact-info">
+            <div className="space-y-4 text-gray-600" data-testid="footer-contact-info">
               <div className="flex items-start space-x-3 group">
                 <div className="bg-clinic-red/20 p-2 rounded-xl group-hover:bg-clinic-red/30 transition-colors duration-300">
                   <svg className="w-5 h-5 text-clinic-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -143,12 +143,12 @@ export default function Footer() {
         </div>
 
         {/* Copyright */}
-        <div className="border-t border-gray-700/50 mt-12 pt-8">
+        <div className="border-t border-gray-300 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <p className="text-gray-400 text-center md:text-left" data-testid="footer-copyright">
+            <p className="text-gray-500 text-center md:text-left" data-testid="footer-copyright">
               © 2025 CEVIDA Diagnósticos – Todos os direitos reservados
             </p>
-            <div className="flex items-center space-x-2 text-gray-400 text-sm">
+            <div className="flex items-center space-x-2 text-gray-500 text-sm">
               <span>Desenvolvido com</span>
               <svg className="w-4 h-4 text-clinic-red animate-pulse" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
