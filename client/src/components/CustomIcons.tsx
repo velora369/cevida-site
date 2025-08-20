@@ -124,9 +124,9 @@ export const QualityIcon = ({ className = "", size = 24 }: IconProps) => (
     strokeLinejoin="round"
     className={className}
   >
-    <path d="M9 11H5a2 2 0 0 0-2 2v3c0 1.1.9 2 2 2h4l5 4V7l-5 4z" />
-    <path d="M22 9l-6 6" />
-    <path d="M16 9l6 6" />
+    <path d="M6 3h12l4 6-10 13L2 9l4-6z" />
+    <path d="M11 3L8 9l4 5 4-5-3-6" />
+    <path d="M2 9h20" />
   </svg>
 );
 
