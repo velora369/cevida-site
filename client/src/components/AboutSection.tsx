@@ -177,7 +177,7 @@ export default function AboutSection() {
               
               {/* Carrossel Container */}
               <div className="relative bg-white/90 backdrop-blur-md p-4 rounded-3xl shadow-2xl border border-white/50 overflow-hidden">
-                <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
+                <div className="relative rounded-2xl overflow-hidden min-h-[300px] md:min-h-[400px]">
                   {/* Imagens do Carrossel */}
                   <div className="relative w-full h-full">
                     {doctorImages.map((image, index) => (
@@ -192,11 +192,9 @@ export default function AboutSection() {
                         <img
                           src={image.src}
                           alt={image.alt}
-                          className="w-full h-full object-cover rounded-xl shadow-xl"
+                          className="w-full h-full object-contain rounded-xl shadow-xl bg-gray-50"
                           data-testid={`doctor-carousel-image-${index}`}
                         />
-                        {/* Overlay Gradient */}
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent rounded-xl"></div>
                       </div>
                     ))}
                   </div>
@@ -240,13 +238,6 @@ export default function AboutSection() {
                       />
                     ))}
                   </div>
-                </div>
-
-                {/* Caption com informações da imagem atual */}
-                <div className="mt-4 text-center">
-                  <p className="text-gray-600 font-medium">
-                    {doctorImages[currentImageIndex].alt}
-                  </p>
                 </div>
               </div>
 
