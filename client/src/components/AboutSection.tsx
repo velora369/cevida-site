@@ -1,7 +1,24 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function AboutSection() {
   const sectionRef = useRef<HTMLDivElement>(null);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  // Imagens do Dr. Luiz Carlos para o carrossel
+  const doctorImages = [
+    {
+      src: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/08/em-servico-2.jpg",
+      alt: "Dr. Luiz Carlos em atendimento médico"
+    },
+    {
+      src: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/08/em-servico-1.jpg", 
+      alt: "Dr. Luiz Carlos realizando exame de ultrassom"
+    },
+    {
+      src: "https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/08/hero-img.jpeg",
+      alt: "Dr. Luiz Carlos com equipamentos modernos"
+    }
+  ];
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -26,6 +43,17 @@ export default function AboutSection() {
 
     return () => observer.disconnect();
   }, []);
+
+  // Carrossel automático - muda imagem a cada 3 segundos
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => 
+        prevIndex === doctorImages.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, [doctorImages.length]);
 
   const stats = [
     {
@@ -141,28 +169,95 @@ export default function AboutSection() {
             </div>
           </div>
           
-          {/* Images */}
-          <div className="grid grid-cols-1 gap-8 animate-on-scroll opacity-0">
+          {/* Carrossel de Imagens do Dr. Luiz Carlos */}
+          <div className="animate-on-scroll opacity-0">
             <div className="relative group">
-              <div className="absolute -inset-2 bg-gradient-to-r from-clinic-red via-red-500 to-red-600 rounded-3xl blur-xl opacity-20 group-hover:opacity-30 transition-opacity duration-500"></div>
-              <div className="relative bg-white/80 backdrop-blur-sm p-3 rounded-3xl shadow-2xl border border-white/50">
-                <img 
-                  src="https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/08/em-servico-2.jpg" 
-                  alt="Dr. Luiz Carlos em atendimento médico" 
-                  className="rounded-2xl w-full h-auto shadow-xl group-hover:scale-105 transition-transform duration-700"
-                  data-testid="doctor-image-1"
-                />
+              {/* Background Glow */}
+              <div className="absolute -inset-4 bg-gradient-to-r from-clinic-red via-red-500 to-red-600 rounded-3xl blur-xl opacity-20 group-hover:opacity-30 transition-opacity duration-500"></div>
+              
+              {/* Carrossel Container */}
+              <div className="relative bg-white/90 backdrop-blur-md p-4 rounded-3xl shadow-2xl border border-white/50 overflow-hidden">
+                <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
+                  {/* Imagens do Carrossel */}
+                  <div className="relative w-full h-full">
+                    {doctorImages.map((image, index) => (
+                      <div
+                        key={index}
+                        className={`absolute inset-0 transition-all duration-700 ease-in-out ${
+                          index === currentImageIndex 
+                            ? 'opacity-100 scale-100' 
+                            : 'opacity-0 scale-105'
+                        }`}
+                      >
+                        <img
+                          src={image.src}
+                          alt={image.alt}
+                          className="w-full h-full object-cover rounded-xl shadow-xl"
+                          data-testid={`doctor-carousel-image-${index}`}
+                        />
+                        {/* Overlay Gradient */}
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent rounded-xl"></div>
+                      </div>
+                    ))}
+                  </div>
+
+                  {/* Navegação Manual - Setas */}
+                  <button
+                    onClick={() => setCurrentImageIndex(
+                      currentImageIndex === 0 ? doctorImages.length - 1 : currentImageIndex - 1
+                    )}
+                    className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/90 backdrop-blur-sm text-clinic-red hover:bg-clinic-red hover:text-white p-3 rounded-full shadow-lg transition-all duration-300 group-hover:scale-110 opacity-0 group-hover:opacity-100"
+                    data-testid="carousel-prev-button"
+                  >
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7" />
+                    </svg>
+                  </button>
+                  <button
+                    onClick={() => setCurrentImageIndex(
+                      currentImageIndex === doctorImages.length - 1 ? 0 : currentImageIndex + 1
+                    )}
+                    className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/90 backdrop-blur-sm text-clinic-red hover:bg-clinic-red hover:text-white p-3 rounded-full shadow-lg transition-all duration-300 group-hover:scale-110 opacity-0 group-hover:opacity-100"
+                    data-testid="carousel-next-button"
+                  >
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                  </button>
+
+                  {/* Indicadores de Posição */}
+                  <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2">
+                    {doctorImages.map((_, index) => (
+                      <button
+                        key={index}
+                        onClick={() => setCurrentImageIndex(index)}
+                        className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                          index === currentImageIndex
+                            ? 'bg-clinic-red shadow-lg scale-125'
+                            : 'bg-white/60 hover:bg-white/80'
+                        }`}
+                        data-testid={`carousel-indicator-${index}`}
+                      />
+                    ))}
+                  </div>
+                </div>
+
+                {/* Caption com informações da imagem atual */}
+                <div className="mt-4 text-center">
+                  <p className="text-gray-600 font-medium">
+                    {doctorImages[currentImageIndex].alt}
+                  </p>
+                </div>
               </div>
-            </div>
-            <div className="relative group">
-              <div className="absolute -inset-2 bg-gradient-to-r from-clinic-red via-red-500 to-red-600 rounded-3xl blur-xl opacity-20 group-hover:opacity-30 transition-opacity duration-500"></div>
-              <div className="relative bg-white/80 backdrop-blur-sm p-3 rounded-3xl shadow-2xl border border-white/50">
-                <img 
-                  src="https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/08/em-servico-1.jpg" 
-                  alt="Dr. Luiz Carlos realizando exame de ultrassom" 
-                  className="rounded-2xl w-full h-auto shadow-xl group-hover:scale-105 transition-transform duration-700"
-                  data-testid="doctor-image-2"
-                />
+
+              {/* Floating Badge - Auto Rotate */}
+              <div className="absolute -top-4 -right-4 bg-gradient-to-r from-clinic-red to-red-500 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg animate-pulse">
+                <div className="flex items-center space-x-2">
+                  <svg className="w-4 h-4 animate-spin" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                  </svg>
+                  <span>Auto</span>
+                </div>
               </div>
             </div>
           </div>
