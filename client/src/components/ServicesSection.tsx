@@ -30,13 +30,10 @@ export default function ServicesSection() {
   const mainServices = [
     {
       icon: (
-        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6a2 2 0 012-2h12a2 2 0 012 2v12a2 2 0 01-2 2H6a2 2 0 01-2-2V6z" />
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 12h8" />
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v8" />
-          <circle cx="9" cy="9" r="1" fill="currentColor" />
-          <circle cx="15" cy="15" r="1" fill="currentColor" />
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 8l-8 8" />
+        <svg className="w-8 h-8" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+          <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+          <circle cx="8.5" cy="8.5" r="1.5" />
+          <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21" />
         </svg>
       ),
       title: "Raio-X Digital",
@@ -46,8 +43,12 @@ export default function ServicesSection() {
     },
     {
       icon: (
-        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+        <svg className="w-8 h-8" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+          <polyline points="14,2 14,8 20,8" />
+          <line x1="16" y1="13" x2="8" y2="13" />
+          <line x1="16" y1="17" x2="8" y2="17" />
+          <polyline points="10,9 9,9 8,9" />
         </svg>
       ),
       title: "Ultrassonografia Avançada",
@@ -57,8 +58,10 @@ export default function ServicesSection() {
     },
     {
       icon: (
-        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+        <svg className="w-8 h-8" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+          <path d="M5.5 8.5L9 12L18.5 2.5" />
+          <path d="M12 12C12 17 8 21 3 21L4 16C4 13 6 11 9 11" />
+          <path d="M21 12C21 17 17 21 12 21L13 16C13 13 15 11 18 11" />
         </svg>
       ),
       title: "Densitometria Óssea",
