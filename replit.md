@@ -80,3 +80,8 @@ Preferred communication style: Simple, everyday language.
 - **Google-style Testimonials**: Realistic patient review display
 - **Professional Medical Imagery**: External image hosting via WordPress CDN
 - **Responsive Contact Forms**: Multi-device appointment request handling
+
+## Recent Changes
+
+### Bug Fixes (August 21, 2025)
+- Fixed syntax error in FaqSection.tsx: Corrected unterminated string constant in FAQ answer about accepted health insurance plans. The multi-line string was properly formatted to a single line to resolve the compilation error.

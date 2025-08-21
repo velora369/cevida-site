@@ -30,8 +30,7 @@ export default function FaqSection() {
     },
     {
       question: "Quais convênios são aceitos?",
-      answer: "Atendemos exclusivamente de forma particular, não trabalhamos com convênios médicos.
-        Para maior comodidade, oferecemos diferentes formas de pagamento: PIX, cartão de crédito/débito e dinheiro."
+      answer: "Atendemos exclusivamente de forma particular, não trabalhamos com convênios médicos. Para maior comodidade, oferecemos diferentes formas de pagamento: PIX, cartão de crédito/débito e dinheiro."
     },
     {
       question: "Em quanto tempo fico com o resultado?",
