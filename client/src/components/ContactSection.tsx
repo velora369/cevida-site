@@ -233,7 +233,6 @@ export default function ContactSection() {
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                       required
                       className="w-full px-4 py-3 rounded-2xl border border-gray-200 focus:ring-2 focus:ring-clinic-red focus:border-transparent transition-all duration-300 bg-white/50 backdrop-blur-sm"
-                      placeholder="(93) 99999-9999"
                       data-testid="input-phone"
                     />
                   </div>
