@@ -172,7 +172,7 @@ export default function ContactSection() {
 
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-start">
           {/* Contact Information */}
-          <div className="animate-on-scroll opacity-0">
+          <div className="animate-on-scroll opacity-0 flex flex-col h-full">
             <h3
               className="text-3xl font-bold text-white mb-8"
               data-testid="contact-info-title"
@@ -180,7 +180,7 @@ export default function ContactSection() {
               Informações de Contato
             </h3>
 
-            <div className="space-y-6">
+            <div className="space-y-8 flex-grow">
               {contactInfo.map((contact, index) => (
                 <div
                   key={index}
@@ -189,15 +189,15 @@ export default function ContactSection() {
                 >
                   <div className="relative">
                     <div className="absolute -inset-1 bg-gradient-to-r from-white via-gray-200 to-gray-300 rounded-2xl blur-lg opacity-20 group-hover:opacity-30 transition-opacity duration-500"></div>
-                    <div className="relative bg-white/95 backdrop-blur-sm p-6 rounded-2xl shadow-2xl border border-white/70 hover:scale-105 transition-all duration-300">
+                    <div className="relative bg-white/95 backdrop-blur-sm p-8 rounded-2xl shadow-2xl border border-white/70 hover:scale-105 transition-all duration-300">
                       <div className="flex items-start space-x-4">
                         <div
-                          className={`bg-gradient-to-r ${contact.gradient} text-white w-14 h-14 rounded-2xl flex items-center justify-center shadow-lg group-hover:rotate-12 transition-transform duration-300`}
+                          className={`bg-gradient-to-r ${contact.gradient} text-white w-16 h-16 rounded-2xl flex items-center justify-center shadow-lg group-hover:rotate-12 transition-transform duration-300`}
                         >
                           {contact.icon}
                         </div>
                         <div className="flex-1">
-                          <h4 className="font-bold text-gray-800 text-lg mb-2">
+                          <h4 className="font-bold text-gray-800 text-xl mb-3">
                             {contact.title}
                           </h4>
                           {contact.link ? (
@@ -207,11 +207,11 @@ export default function ContactSection() {
                               rel="noopener noreferrer"
                               className="hover:text-red-600 transition-colors text-[#4b5563] font-normal cursor-pointer block"
                             >
-                              <div className="space-y-1">
+                              <div className="space-y-2">
                                 {contact.info.map((line, lineIndex) => (
                                   <p
                                     key={lineIndex}
-                                    className="text-gray-600 hover:text-red-600 transition-colors"
+                                    className="text-gray-600 hover:text-red-600 transition-colors text-base leading-relaxed"
                                   >
                                     {line}
                                   </p>
@@ -219,9 +219,9 @@ export default function ContactSection() {
                               </div>
                             </a>
                           ) : (
-                            <div className="space-y-1">
+                            <div className="space-y-2">
                               {contact.info.map((line, lineIndex) => (
-                                <p key={lineIndex} className="text-gray-600">
+                                <p key={lineIndex} className="text-gray-600 text-base leading-relaxed">
                                   {line}
                                 </p>
                               ))}
@@ -237,13 +237,13 @@ export default function ContactSection() {
 
             {/* Payment Info */}
             <div
-              className="bg-white/80 backdrop-blur-sm p-4 rounded-xl border border-clinic-red/20 shadow-lg mt-6"
+              className="bg-white/80 backdrop-blur-sm p-6 rounded-xl border border-clinic-red/20 shadow-lg mt-8"
               data-testid="payment-info"
             >
-              <div className="flex items-center space-x-3">
-                <div className="w-6 h-6 rounded-full bg-clinic-red/10 flex items-center justify-center flex-shrink-0">
+              <div className="flex items-start space-x-4">
+                <div className="w-8 h-8 rounded-full bg-clinic-red/10 flex items-center justify-center flex-shrink-0 mt-1">
                   <svg
-                    className="w-4 h-4 text-clinic-red"
+                    className="w-5 h-5 text-clinic-red"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -256,13 +256,14 @@ export default function ContactSection() {
                     />
                   </svg>
                 </div>
-                <p className="text-sm text-gray-600 leading-relaxed">
-                  <span className="text-clinic-red font-medium">
-                    Importante:
-                  </span>{" "}
-                  Atendemos apenas particular (PIX, cartão e dinheiro). Não
-                  trabalhamos com convênios.
-                </p>
+                <div>
+                  <p className="text-base text-gray-600 leading-relaxed">
+                    <span className="text-clinic-red font-semibold block mb-1">
+                      Informação Importante:
+                    </span>
+                    Atendemos apenas particular (PIX, cartão e dinheiro). Não trabalhamos com convênios médicos.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
