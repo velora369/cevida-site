@@ -382,23 +382,23 @@ export default function ContactSection() {
             </div>
           </div>
         </div>
-        
-        {/* Nossa Localização */}
-        <div className="mt-20 animate-on-scroll opacity-0">
-          <div className="text-center mb-12">
-            <h3 className="text-4xl md:text-5xl font-bold text-white mb-6" data-testid="location-title">
+
+        {/* Nossa Localização - dentro da seção de contato */}
+        <div className="mt-16 animate-on-scroll opacity-0">
+          <div className="text-center mb-8">
+            <h3 className="text-3xl md:text-4xl font-bold text-white mb-4" data-testid="location-title">
               Nossa Localização
             </h3>
-            <div className="w-32 h-1.5 bg-white/40 mx-auto rounded-full mb-6"></div>
-            <p className="text-xl text-white/90 max-w-3xl mx-auto leading-relaxed">
+            <div className="w-24 h-1 bg-white/40 mx-auto rounded-full mb-4"></div>
+            <p className="text-lg text-white/90 max-w-2xl mx-auto leading-relaxed">
               Venha nos visitar! Estamos localizados no coração de Santarém
             </p>
           </div>
           
-          <div className="relative group max-w-6xl mx-auto">
-            <div className="absolute -inset-2 bg-gradient-to-r from-white via-gray-200 to-gray-300 rounded-3xl blur-xl opacity-20 group-hover:opacity-30 transition-opacity duration-500"></div>
-            <div className="relative bg-white/95 backdrop-blur-sm p-4 md:p-8 rounded-3xl shadow-2xl border border-white/70">
-              <div className="relative w-full h-64 md:h-96 lg:h-[500px] rounded-2xl overflow-hidden shadow-lg">
+          <div className="relative group">
+            <div className="absolute -inset-1 bg-gradient-to-r from-white via-gray-200 to-gray-300 rounded-2xl blur-lg opacity-20 group-hover:opacity-30 transition-opacity duration-500"></div>
+            <div className="relative bg-white/95 backdrop-blur-sm p-4 rounded-2xl shadow-2xl border border-white/70">
+              <div className="relative w-full h-64 md:h-80 lg:h-96 rounded-xl overflow-hidden shadow-lg">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.4642743234796!2d-54.73542848581453!3d-2.4303719982569743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9288d24e7b0e9e5b%3A0x6a5c8c5f5e8f5a4b!2sAv.%20Mendon%C3%A7a%20Furtado%2C%201858%20-%20Aldeia%2C%20Santar%C3%A9m%20-%20PA%2C%2068040-050!5e0!3m2!1spt!2sbr!4v1691234567890!5m2!1spt!2sbr"
                   width="100%"
@@ -407,71 +407,9 @@ export default function ContactSection() {
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  className="rounded-2xl"
+                  className="rounded-xl"
                   data-testid="location-map"
                 ></iframe>
-              </div>
-              
-              {/* Informações adicionais sobre localização */}
-              <div className="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                <div className="flex items-center space-x-3 p-4 bg-gradient-to-r from-clinic-red/10 to-red-100/50 rounded-2xl">
-                  <div className="w-10 h-10 bg-gradient-to-r from-clinic-red to-red-600 rounded-xl flex items-center justify-center">
-                    <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
-                    </svg>
-                  </div>
-                  <div>
-                    <p className="text-sm font-semibold text-gray-800">Endereço Completo</p>
-                    <p className="text-xs text-gray-600">Clínica Vitalle, Sala 13</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-center space-x-3 p-4 bg-gradient-to-r from-clinic-red/10 to-red-100/50 rounded-2xl">
-                  <div className="w-10 h-10 bg-gradient-to-r from-clinic-red to-red-600 rounded-xl flex items-center justify-center">
-                    <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7V3a1 1 0 011-1h6a1 1 0 011 1v4"/>
-                      <rect x="3" y="7" width="18" height="13" rx="2" ry="2"/>
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m8 11 2 2 4-4"/>
-                    </svg>
-                  </div>
-                  <div>
-                    <p className="text-sm font-semibold text-gray-800">Estacionamento</p>
-                    <p className="text-xs text-gray-600">Disponível no local</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-center space-x-3 p-4 bg-gradient-to-r from-clinic-red/10 to-red-100/50 rounded-2xl sm:col-span-2 lg:col-span-1">
-                  <div className="w-10 h-10 bg-gradient-to-r from-clinic-red to-red-600 rounded-xl flex items-center justify-center">
-                    <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/>
-                    </svg>
-                  </div>
-                  <div>
-                    <p className="text-sm font-semibold text-gray-800">Acesso Fácil</p>
-                    <p className="text-xs text-gray-600">Localização central</p>
-                  </div>
-                </div>
-              </div>
-              
-              {/* Botão para abrir no Google Maps */}
-              <div className="mt-6 text-center">
-                <a
-                  href="https://maps.app.goo.gl/M3t7eAxv1YFcZTWD9"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center bg-gradient-to-r from-clinic-red via-red-500 to-red-600 text-white px-6 py-3 rounded-full hover:scale-105 hover:shadow-lg hover:shadow-clinic-red/25 transition-all duration-300 font-semibold group"
-                  data-testid="view-in-maps-button"
-                >
-                  <svg className="w-5 h-5 mr-2 group-hover:rotate-12 transition-transform duration-300" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
-                    <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
-                  </svg>
-                  Ver no Google Maps
-                  <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
-                  </svg>
-                </a>
               </div>
             </div>
           </div>
