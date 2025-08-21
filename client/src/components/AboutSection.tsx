@@ -172,17 +172,17 @@ export default function AboutSection() {
               <div className="absolute -inset-4 bg-gradient-to-r from-clinic-red via-red-500 to-red-600 rounded-3xl blur-xl opacity-20 group-hover:opacity-30 transition-opacity duration-500"></div>
               
               {/* Carrossel Container */}
-              <div className="relative bg-white/90 backdrop-blur-md p-6 rounded-3xl shadow-2xl border border-white/50">
-                <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100">
+              <div className="relative bg-white/90 backdrop-blur-md p-2 rounded-3xl shadow-2xl border border-white/50">
+                <div className="relative w-full rounded-2xl overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100">
                   {doctorImages.map((image, index) => (
                     <img
                       key={index}
                       src={image.src}
                       alt={image.alt}
-                      className={`absolute inset-0 w-full h-full object-cover rounded-xl transition-all duration-700 ease-in-out ${
+                      className={`w-full h-auto rounded-xl transition-all duration-700 ease-in-out ${
                         index === currentImageIndex 
-                          ? 'opacity-100' 
-                          : 'opacity-0'
+                          ? 'opacity-100 block' 
+                          : 'opacity-0 absolute inset-0'
                       }`}
                       data-testid={`doctor-carousel-image-${index}`}
                     />
