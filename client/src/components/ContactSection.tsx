@@ -156,7 +156,7 @@ export default function ContactSection() {
                               href={contact.link}
                               target="_blank" 
                               rel="noopener noreferrer"
-                              className="hover:text-red-600 font-semibold transition-colors text-[#4b5563]"
+                              className="hover:text-red-600 transition-colors text-[#4b5563] font-normal"
                             >
                               {contact.info[0]}
                             </a>
