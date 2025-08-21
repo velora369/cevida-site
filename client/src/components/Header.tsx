@@ -26,6 +26,7 @@ export default function Header() {
     { id: 'quem-somos', label: 'Quem Somos' },
     { id: 'beneficios', label: 'Benefícios' },
     { id: 'especialidades', label: 'Especialidades' },
+    { id: 'depoimentos', label: 'Depoimentos' },
     { id: 'faq', label: 'FAQ' },
     { id: 'contato', label: 'Contato' }
   ];

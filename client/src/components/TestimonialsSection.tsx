@@ -56,6 +56,7 @@ export default function TestimonialsSection() {
 
   return (
     <section 
+      id="depoimentos"
       ref={sectionRef}
       className="py-16 md:py-24 bg-gradient-to-b from-white to-gray-50/50 relative overflow-hidden" 
       data-testid="testimonials-section"
