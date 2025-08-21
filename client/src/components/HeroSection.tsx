@@ -135,15 +135,7 @@ export default function HeroSection() {
             </div>
             
             {/* Floating Stats Cards */}
-            <div className="absolute -top-8 -right-8 glass-card p-4 hover-scale hidden lg:block">
-              <div className="text-center">
-                <div className="flex items-center justify-center mb-2">
-                  <StarRatingIcon className="text-clinic-red" size={28} />
-                  <span className="ml-1 text-2xl font-bold text-clinic-red">5</span>
-                </div>
-                <p className="text-sm text-gray-600 dark:text-gray-300">Avaliação</p>
-              </div>
-            </div>
+
           </div>
         </div>
         
