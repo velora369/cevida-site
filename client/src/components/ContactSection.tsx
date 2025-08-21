@@ -120,7 +120,6 @@ export default function ContactSection() {
         <div className="absolute top-1/4 right-1/4 w-80 h-80 bg-clinic-red rounded-full blur-3xl"></div>
         <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-cyan-400 rounded-full blur-3xl"></div>
       </div>
-
       <div className="container mx-auto px-4 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-20 animate-on-scroll opacity-0">
@@ -157,7 +156,7 @@ export default function ContactSection() {
                               href={contact.link}
                               target="_blank" 
                               rel="noopener noreferrer"
-                              className="text-clinic-red hover:text-red-600 font-semibold transition-colors"
+                              className="hover:text-red-600 font-semibold transition-colors text-[#4b5563]"
                             >
                               {contact.info[0]}
                             </a>
