@@ -132,9 +132,9 @@ export default function ContactSection() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-16">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-start">
           {/* Contact Information */}
-          <div className="space-y-8 animate-on-scroll opacity-0">
+          <div className="animate-on-scroll opacity-0">
             <h3 className="text-3xl font-bold text-white mb-8" data-testid="contact-info-title">
               Informações de Contato
             </h3>
@@ -180,21 +180,19 @@ export default function ContactSection() {
             </div>
 
             {/* Payment Info */}
-            <div className="animate-on-scroll opacity-0">
-              <div className="relative group">
-                <div className="absolute -inset-1 bg-gradient-to-r from-clinic-red to-red-600 rounded-2xl blur-lg opacity-15 group-hover:opacity-25 transition-opacity duration-500"></div>
-                <div className="relative bg-gradient-to-r from-red-50 to-clinic-red-light p-6 rounded-2xl border-l-4 border-clinic-red shadow-xl" data-testid="payment-info">
-                  <div className="flex items-start space-x-3">
-                    <div className="bg-clinic-red text-white w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0">
-                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                      </svg>
-                    </div>
-                    <div>
-                      <p className="text-sm text-gray-700 leading-relaxed">
-                        <strong>Importante:</strong> Atendemos apenas particular (PIX, cartão e dinheiro). Não trabalhamos com convênios.
-                      </p>
-                    </div>
+            <div className="relative group">
+              <div className="absolute -inset-1 bg-gradient-to-r from-clinic-red to-red-600 rounded-2xl blur-lg opacity-15 group-hover:opacity-25 transition-opacity duration-500"></div>
+              <div className="relative bg-gradient-to-r from-red-50 to-clinic-red-light p-6 rounded-2xl border-l-4 border-clinic-red shadow-xl" data-testid="payment-info">
+                <div className="flex items-start space-x-3">
+                  <div className="bg-clinic-red text-white w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0">
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="text-sm text-gray-700 leading-relaxed">
+                      <strong>Importante:</strong> Atendemos apenas particular (PIX, cartão e dinheiro). Não trabalhamos com convênios.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -203,12 +201,12 @@ export default function ContactSection() {
 
           {/* Contact Form */}
           <div className="animate-on-scroll opacity-0">
+            <h3 className="text-3xl font-bold text-white mb-8" data-testid="contact-form-title">
+              Formulário de Contato
+            </h3>
             <div className="relative group">
               <div className="absolute -inset-2 bg-gradient-to-r from-clinic-red via-red-500 to-red-600 rounded-3xl blur-xl opacity-20 group-hover:opacity-30 transition-opacity duration-500"></div>
               <div className="relative bg-white/90 backdrop-blur-sm p-8 rounded-3xl shadow-2xl border border-white/50">
-                <h3 className="text-3xl font-bold text-gray-800 mb-8 text-center" data-testid="contact-form-title">
-                  Formulário de Contato
-                </h3>
                 <form onSubmit={handleSubmit} className="space-y-6" data-testid="contact-form">
                   <div className="space-y-2">
                     <Label htmlFor="name" className="text-sm font-medium text-gray-700">
