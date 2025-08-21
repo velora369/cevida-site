@@ -72,7 +72,7 @@ export default function ContactSection() {
       ),
       title: "Endereço",
       info: ["Av. Mendonça Furtado, 1858 – Clínica Vitalle (Sala 13)", "Aldeia, Santarém-PA, CEP 68040-050"],
-      gradient: "from-blue-500 to-blue-600"
+      gradient: "from-clinic-red to-red-600"
     },
     {
       icon: (
@@ -82,7 +82,7 @@ export default function ContactSection() {
       ),
       title: "Horários",
       info: ["Segunda a sexta, das 08:00 às 17:00"],
-      gradient: "from-emerald-500 to-emerald-600"
+      gradient: "from-clinic-red to-red-600"
     },
     {
       icon: (
@@ -92,7 +92,7 @@ export default function ContactSection() {
       ),
       title: "WhatsApp",
       info: ["(93) 99231-8885"],
-      gradient: "from-green-500 to-green-600",
+      gradient: "from-clinic-red to-red-600",
       link: "https://wa.me/5593992318885"
     },
     {
@@ -103,7 +103,7 @@ export default function ContactSection() {
       ),
       title: "Instagram",
       info: ["@cevidastm"],
-      gradient: "from-pink-500 to-purple-600",
+      gradient: "from-clinic-red to-red-600",
       link: "https://instagram.com/cevidastm"
     }
   ];
