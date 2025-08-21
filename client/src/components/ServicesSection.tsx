@@ -121,10 +121,7 @@ export default function ServicesSection() {
               <div className="absolute -inset-1 bg-gradient-to-r from-clinic-red via-red-500 to-red-600 rounded-3xl blur-xl opacity-20 group-hover:opacity-30 transition-opacity duration-500"></div>
               <div className="relative bg-white/80 backdrop-blur-sm p-8 rounded-3xl shadow-2xl border border-white/50 h-full hover:scale-105 transition-all duration-500">
                 <div className="text-center">
-                  {/* Icon */}
-                  <div className={`bg-gradient-to-r ${service.gradient} text-white w-20 h-20 rounded-3xl flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:rotate-12 transition-transform duration-300`}>
-                    {service.icon}
-                  </div>
+                  
                   
                   {/* Content */}
                   <h3 className="text-2xl font-bold text-gray-800 mb-4">{service.title}</h3>
