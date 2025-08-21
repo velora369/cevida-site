@@ -30,7 +30,8 @@ export default function FaqSection() {
     },
     {
       question: "Quais convênios são aceitos?",
-      answer: "Aceitamos os principais convênios médicos da região. Entre em contato conosco para verificar se seu convênio está na nossa rede credenciada e quais exames são cobertos."
+      answer: "Atendemos exclusivamente de forma particular, não trabalhamos com convênios médicos.
+        Para maior comodidade, oferecemos diferentes formas de pagamento: PIX, cartão de crédito/débito e dinheiro."
     },
     {
       question: "Em quanto tempo fico com o resultado?",
