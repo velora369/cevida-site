@@ -380,36 +380,33 @@ export default function ContactSection() {
                 </form>
               </div>
             </div>
-          </div>
-        </div>
 
-        {/* Nossa Localização - dentro da seção de contato */}
-        <div className="mt-16 animate-on-scroll opacity-0">
-          <div className="text-center mb-8">
-            <h3 className="text-3xl md:text-4xl font-bold text-white mb-4" data-testid="location-title">
-              Nossa Localização
-            </h3>
-            <div className="w-24 h-1 bg-white/40 mx-auto rounded-full mb-4"></div>
-            <p className="text-lg text-white/90 max-w-2xl mx-auto leading-relaxed">
-              Venha nos visitar! Estamos localizados no coração de Santarém
-            </p>
-          </div>
-          
-          <div className="relative group">
-            <div className="absolute -inset-1 bg-gradient-to-r from-white via-gray-200 to-gray-300 rounded-2xl blur-lg opacity-20 group-hover:opacity-30 transition-opacity duration-500"></div>
-            <div className="relative bg-white/95 backdrop-blur-sm p-4 rounded-2xl shadow-2xl border border-white/70">
-              <div className="relative w-full h-64 md:h-80 lg:h-96 rounded-xl overflow-hidden shadow-lg">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.4642743234796!2d-54.73542848581453!3d-2.4303719982569743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9288d24e7b0e9e5b%3A0x6a5c8c5f5e8f5a4b!2sAv.%20Mendon%C3%A7a%20Furtado%2C%201858%20-%20Aldeia%2C%20Santar%C3%A9m%20-%20PA%2C%2068040-050!5e0!3m2!1spt!2sbr!4v1691234567890!5m2!1spt!2sbr"
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  className="rounded-xl"
-                  data-testid="location-map"
-                ></iframe>
+            {/* Nossa Localização - abaixo do formulário, na mesma coluna */}
+            <div className="mt-12 animate-on-scroll opacity-0">
+              <h3 className="text-3xl font-bold text-white mb-6" data-testid="location-title">
+                Nossa Localização
+              </h3>
+              <p className="text-lg text-white/90 mb-6 leading-relaxed">
+                Venha nos visitar! Estamos localizados no coração de Santarém
+              </p>
+              
+              <div className="relative group">
+                <div className="absolute -inset-1 bg-gradient-to-r from-white via-gray-200 to-gray-300 rounded-2xl blur-lg opacity-20 group-hover:opacity-30 transition-opacity duration-500"></div>
+                <div className="relative bg-white/95 backdrop-blur-sm p-4 rounded-2xl shadow-2xl border border-white/70">
+                  <div className="relative w-full h-64 md:h-80 lg:h-96 rounded-xl overflow-hidden shadow-lg">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.4642743234796!2d-54.73542848581453!3d-2.4303719982569743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9288d24e7b0e9e5b%3A0x6a5c8c5f5e8f5a4b!2sAv.%20Mendon%C3%A7a%20Furtado%2C%201858%20-%20Aldeia%2C%20Santar%C3%A9m%20-%20PA%2C%2068040-050!5e0!3m2!1spt!2sbr!4v1691234567890!5m2!1spt!2sbr"
+                      width="100%"
+                      height="100%"
+                      style={{ border: 0 }}
+                      allowFullScreen
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                      className="rounded-xl"
+                      data-testid="location-map"
+                    ></iframe>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
