@@ -180,7 +180,7 @@ export default function ContactSection() {
             </div>
 
             {/* Payment Info */}
-            <div className="bg-white/80 backdrop-blur-sm p-4 rounded-xl border border-clinic-red/20 shadow-lg" data-testid="payment-info">
+            <div className="bg-white/80 backdrop-blur-sm p-4 rounded-xl border border-clinic-red/20 shadow-lg mt-6" data-testid="payment-info">
               <div className="flex items-center space-x-3">
                 <div className="w-6 h-6 rounded-full bg-clinic-red/10 flex items-center justify-center flex-shrink-0">
                   <svg className="w-4 h-4 text-clinic-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
