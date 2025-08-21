@@ -96,7 +96,7 @@ export default function ContactSection() {
       info: [
         "Av. Mendonça Furtado, 1858 – Clínica Vitalle (Sala 13) Aldeia, Santarém-PA, CEP 68040-050",
       ],
-      gradient: "from-clinic-red to-red-600",
+      gradient: "from-clinic-red to-clinic-red-dark",
       link: "https://maps.app.goo.gl/MHT5mqzamRtAvFT36",
     },
     {
@@ -117,7 +117,7 @@ export default function ContactSection() {
       ),
       title: "Horários",
       info: ["Segunda a sexta, das 08:00 às 17:00"],
-      gradient: "from-clinic-red to-red-600",
+      gradient: "from-clinic-red to-clinic-red-dark",
     },
     {
       icon: (
@@ -127,7 +127,7 @@ export default function ContactSection() {
       ),
       title: "WhatsApp",
       info: ["(93) 99231-8885"],
-      gradient: "from-clinic-red to-red-600",
+      gradient: "from-clinic-red to-clinic-red-dark",
       link: "https://wa.me/5593992318885",
     },
     {
@@ -138,7 +138,7 @@ export default function ContactSection() {
       ),
       title: "Instagram",
       info: ["@cevidastm"],
-      gradient: "from-clinic-red to-red-600",
+      gradient: "from-clinic-red to-clinic-red-dark",
       link: "https://instagram.com/cevidastm",
     },
   ];
@@ -147,7 +147,7 @@ export default function ContactSection() {
     <section
       id="contato"
       ref={sectionRef}
-      className="py-16 md:py-24 bg-gradient-to-b from-clinic-red to-red-600 relative overflow-hidden"
+      className="py-16 md:py-24 bg-gradient-to-b from-clinic-red to-clinic-red-dark relative overflow-hidden"
       data-testid="contact-section"
     >
       {/* Background Pattern */}
@@ -277,7 +277,7 @@ export default function ContactSection() {
               Formulário de Contato
             </h3>
             <div className="relative group">
-              <div className="absolute -inset-2 bg-gradient-to-r from-clinic-red via-red-500 to-red-600 rounded-3xl blur-xl opacity-20 group-hover:opacity-30 transition-opacity duration-500"></div>
+              <div className="absolute -inset-2 bg-gradient-to-r from-clinic-red via-clinic-red to-clinic-red-dark rounded-3xl blur-xl opacity-20 group-hover:opacity-30 transition-opacity duration-500"></div>
               <div className="relative bg-white/90 backdrop-blur-sm p-8 rounded-3xl shadow-2xl border border-white/50">
                 <form
                   onSubmit={handleSubmit}
@@ -353,7 +353,7 @@ export default function ContactSection() {
 
                   <Button
                     type="submit"
-                    className="w-full bg-gradient-to-r from-clinic-red via-red-500 to-red-600 text-white py-4 rounded-2xl hover:scale-105 hover:shadow-xl hover:shadow-clinic-red/25 transition-all duration-300 font-semibold text-lg group"
+                    className="w-full bg-gradient-to-r from-clinic-red via-clinic-red to-clinic-red-dark text-white py-4 rounded-2xl hover:scale-105 hover:shadow-xl hover:shadow-clinic-red/25 transition-all duration-300 font-semibold text-lg group"
                     data-testid="submit-contact-form"
                   >
                     <svg
