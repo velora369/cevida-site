@@ -29,43 +29,18 @@ export default function ServicesSection() {
 
   const mainServices = [
     {
-      icon: (
-        <svg className="w-8 h-8" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
-          <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
-          <circle cx="8.5" cy="8.5" r="1.5" />
-          <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21" />
-        </svg>
-      ),
       title: "Raio-X Digital",
       description: "Alta definição, panorâmico e coluna total com tecnologia digital avançada",
       whatsappText: "Gostaria de agendar um Raio-X Digital",
       gradient: "from-blue-500 to-blue-600"
     },
     {
-      icon: (
-        <svg className="w-8 h-8" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
-          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-          <polyline points="14,2 14,8 20,8" />
-          <line x1="16" y1="13" x2="8" y2="13" />
-          <line x1="16" y1="17" x2="8" y2="17" />
-          <polyline points="10,9 9,9 8,9" />
-        </svg>
-      ),
       title: "Ultrassonografia Avançada",
       description: "Geral, Doppler, obstétrica, morfológica e músculo-esquelética",
       whatsappText: "Gostaria de agendar uma Ultrassonografia",
       gradient: "from-clinic-red to-red-600"
     },
     {
-      icon: (
-        <svg className="w-8 h-8" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
-          <circle cx="8" cy="6" r="3" />
-          <path d="M8 9l3 3v6" />
-          <path d="M11 12l5-1v7" />
-          <circle cx="16" cy="18" r="3" />
-          <circle cx="11" cy="18" r="2" />
-        </svg>
-      ),
       title: "Densitometria Óssea",
       description: "Coluna, fêmur e corpo total para diagnóstico de osteoporose",
       whatsappText: "Gostaria de agendar uma Densitometria Óssea",
@@ -171,11 +146,6 @@ export default function ServicesSection() {
               <div className="absolute -inset-1 bg-gradient-to-r from-clinic-red via-red-500 to-red-600 rounded-3xl blur-xl opacity-20 group-hover:opacity-30 transition-opacity duration-500"></div>
               <div className="relative bg-white/80 backdrop-blur-sm p-8 rounded-3xl shadow-2xl border border-white/50 h-full hover:scale-105 transition-all duration-500">
                 <div className="text-center">
-                  {/* Icon */}
-                  <div className={`w-16 h-16 mx-auto mb-6 rounded-2xl bg-gradient-to-br ${service.gradient} flex items-center justify-center text-white shadow-lg`}>
-                    {service.icon}
-                  </div>
-                  
                   {/* Content */}
                   <h3 className="text-2xl font-bold text-gray-800 mb-4">{service.title}</h3>
                   <p className="text-gray-600 mb-6 leading-relaxed">{service.description}</p>
