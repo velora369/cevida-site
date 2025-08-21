@@ -71,7 +71,8 @@ export default function ContactSection() {
       ),
       title: "Endereço",
       info: ["Av. Mendonça Furtado, 1858 – Clínica Vitalle (Sala 13)", "Aldeia, Santarém-PA, CEP 68040-050"],
-      gradient: "from-clinic-red to-red-600"
+      gradient: "from-clinic-red to-red-600",
+      link: "https://maps.app.goo.gl/MHT5mqzamRtAvFT36"
     },
     {
       icon: (
@@ -155,9 +156,13 @@ export default function ContactSection() {
                               href={contact.link}
                               target="_blank" 
                               rel="noopener noreferrer"
-                              className="hover:text-red-600 transition-colors text-[#4b5563] font-normal"
+                              className="hover:text-red-600 transition-colors text-[#4b5563] font-normal cursor-pointer block"
                             >
-                              {contact.info[0]}
+                              <div className="space-y-1">
+                                {contact.info.map((line, lineIndex) => (
+                                  <p key={lineIndex} className="text-gray-600 hover:text-red-600 transition-colors">{line}</p>
+                                ))}
+                              </div>
                             </a>
                           ) : (
                             <div className="space-y-1">
