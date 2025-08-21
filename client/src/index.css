@@ -13,8 +13,8 @@
   --popover-foreground: hsl(220, 15%, 12%);
   
   /* Brand Primary Colors - CEVIDA Red */
-  --primary: hsl(356, 100%, 57%);
-  --primary-hover: hsl(356, 100%, 52%);
+  --primary: hsl(356, 69%, 49%);
+  --primary-hover: hsl(356, 69%, 44%);
   --primary-foreground: hsl(0, 0%, 100%);
   --primary-soft: hsl(356, 100%, 97%);
   
@@ -37,7 +37,7 @@
   /* UI Elements */
   --border: hsl(220, 13%, 91%);
   --input: hsl(220, 13%, 91%);
-  --ring: hsl(356, 100%, 57%);
+  --ring: hsl(356, 69%, 49%);
   
   /* Typography */
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -68,10 +68,10 @@
   --glass-blur: blur(20px);
   
   /* Custom CEVIDA Brand Colors */
-  --clinic-red: hsl(356, 100%, 57%);
-  --clinic-red-hover: hsl(356, 100%, 52%);
-  --clinic-red-light: hsl(356, 100%, 97%);
-  --clinic-red-dark: hsl(356, 100%, 47%);
+  --clinic-red: hsl(356, 69%, 49%);
+  --clinic-red-hover: hsl(356, 69%, 44%);
+  --clinic-red-light: hsl(356, 69%, 97%);
+  --clinic-red-dark: hsl(356, 69%, 39%);
   --clinic-gray: hsl(220, 13%, 96%);
   --clinic-gray-dark: hsl(220, 15%, 25%);
 }
@@ -84,10 +84,10 @@
   --popover: hsl(220, 18%, 12%);
   --popover-foreground: hsl(220, 8%, 95%);
   
-  --primary: hsl(356, 100%, 57%);
-  --primary-hover: hsl(356, 100%, 62%);
+  --primary: hsl(356, 69%, 49%);
+  --primary-hover: hsl(356, 69%, 54%);
   --primary-foreground: hsl(0, 0%, 100%);
-  --primary-soft: hsl(356, 100%, 15%);
+  --primary-soft: hsl(356, 69%, 15%);
   
   --secondary: hsl(220, 8%, 85%);
   --secondary-foreground: hsl(220, 20%, 15%);
@@ -98,17 +98,17 @@
   
   --border: hsl(220, 15%, 20%);
   --input: hsl(220, 15%, 18%);
-  --ring: hsl(356, 100%, 57%);
+  --ring: hsl(356, 69%, 49%);
   
   /* Dark Mode Glassmorphism */
   --glass-bg: rgba(20, 20, 30, 0.85);
   --glass-border: rgba(255, 255, 255, 0.1);
   
   /* Dark Mode Brand Colors */
-  --clinic-red: hsl(356, 100%, 57%);
-  --clinic-red-hover: hsl(356, 100%, 62%);
-  --clinic-red-light: hsl(356, 100%, 15%);
-  --clinic-red-dark: hsl(356, 100%, 52%);
+  --clinic-red: hsl(356, 69%, 49%);
+  --clinic-red-hover: hsl(356, 69%, 54%);
+  --clinic-red-light: hsl(356, 69%, 15%);
+  --clinic-red-dark: hsl(356, 69%, 44%);
   --clinic-gray: hsl(220, 15%, 15%);
   --clinic-gray-dark: hsl(220, 8%, 85%);
 }
