@@ -58,8 +58,18 @@ export default function ServicesSection() {
     },
     {
       icon: (
-        <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M18.5 2C16.57 2 15 3.57 15 5.5C15 6.38 15.3 7.19 15.83 7.83L12 11.66L8.17 7.83C8.7 7.19 9 6.38 9 5.5C9 3.57 7.43 2 5.5 2S2 3.57 2 5.5C2 7.43 3.57 9 5.5 9C6.38 9 7.19 8.7 7.83 8.17L11.66 12L7.83 15.83C7.19 15.3 6.38 15 5.5 15C3.57 15 2 16.57 2 18.5S3.57 22 5.5 22S9 20.43 9 18.5C9 17.62 8.7 16.81 8.17 16.17L12 12.34L15.83 16.17C15.3 16.81 15 17.62 15 18.5C15 20.43 16.57 22 18.5 22S22 20.43 22 18.5S20.43 15 18.5 15C17.62 15 16.81 15.3 16.17 15.83L12.34 12L16.17 8.17C16.81 8.7 17.62 9 18.5 9C20.43 9 22 7.43 22 5.5S20.43 2 18.5 2Z" />
+        <svg className="w-8 h-8" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+          <path d="M12 2L8 6L12 10L16 6L12 2Z" />
+          <path d="M12 14L8 18L12 22L16 18L12 14Z" />
+          <path d="M12 2v20" />
+          <circle cx="8" cy="6" r="1" />
+          <circle cx="16" cy="6" r="1" />
+          <circle cx="8" cy="10" r="1" />
+          <circle cx="16" cy="10" r="1" />
+          <circle cx="8" cy="14" r="1" />
+          <circle cx="16" cy="14" r="1" />
+          <circle cx="8" cy="18" r="1" />
+          <circle cx="16" cy="18" r="1" />
         </svg>
       ),
       title: "Densitometria Óssea",
