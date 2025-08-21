@@ -208,14 +208,7 @@ export default function ServicesSection() {
                 <div className="space-y-6">
                   {allServices.slice(0, 4).map((service, index) => (
                     <div key={index} className="flex items-center justify-between space-x-4 group bg-white/50 p-4 rounded-2xl border border-gray-100 hover:border-clinic-red-light transition-all duration-300" data-testid={`service-item-${index}`}>
-                      <div className="flex items-start space-x-4 flex-1">
-                        <div className="bg-gradient-to-r from-clinic-red to-red-500 text-white w-10 h-10 rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
-                          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                          </svg>
-                        </div>
-                        <span className="text-gray-700 text-lg leading-relaxed pt-1 flex-1">{service.name}</span>
-                      </div>
+                      <span className="text-gray-700 text-lg leading-relaxed flex-1">{service.name}</span>
                       <button
                         onClick={() => setSelectedService(service)}
                         className="bg-clinic-red text-white px-4 py-2 rounded-xl text-sm font-medium hover:bg-red-600 transition-colors duration-300 whitespace-nowrap"
@@ -229,14 +222,7 @@ export default function ServicesSection() {
                 <div className="space-y-6">
                   {allServices.slice(4).map((service, index) => (
                     <div key={index + 4} className="flex items-center justify-between space-x-4 group bg-white/50 p-4 rounded-2xl border border-gray-100 hover:border-clinic-red-light transition-all duration-300" data-testid={`service-item-${index + 4}`}>
-                      <div className="flex items-start space-x-4 flex-1">
-                        <div className="bg-gradient-to-r from-clinic-red to-red-500 text-white w-10 h-10 rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
-                          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                          </svg>
-                        </div>
-                        <span className="text-gray-700 text-lg leading-relaxed pt-1 flex-1">{service.name}</span>
-                      </div>
+                      <span className="text-gray-700 text-lg leading-relaxed flex-1">{service.name}</span>
                       <button
                         onClick={() => setSelectedService(service)}
                         className="bg-clinic-red text-white px-4 py-2 rounded-xl text-sm font-medium hover:bg-red-600 transition-colors duration-300 whitespace-nowrap"
