@@ -167,7 +167,7 @@ export default function AboutSection() {
           
           {/* Carrossel de Imagens do Dr. Luiz Carlos */}
           <div className="animate-on-scroll opacity-0">
-            <div className="relative group">
+            <div className="relative group max-w-md mx-auto">
               {/* Background Glow */}
               <div className="absolute -inset-4 bg-gradient-to-r from-clinic-red via-red-500 to-red-600 rounded-3xl blur-xl opacity-20 group-hover:opacity-30 transition-opacity duration-500"></div>
               
