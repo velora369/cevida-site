@@ -59,13 +59,10 @@ export default function ServicesSection() {
     {
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
-          <path d="M12 3v18" />
-          <ellipse cx="12" cy="5" rx="2" ry="1" />
-          <ellipse cx="12" cy="8" rx="2.5" ry="1" />
-          <ellipse cx="12" cy="11" rx="2.5" ry="1" />
-          <ellipse cx="12" cy="14" rx="2.5" ry="1" />
-          <ellipse cx="12" cy="17" rx="2.5" ry="1" />
-          <ellipse cx="12" cy="20" rx="2" ry="1" />
+          <path d="M12 4c-2 0-3 1-3 2.5v1c0 .5.5 1 1 1h4c.5 0 1-.5 1-1v-1c0-1.5-1-2.5-3-2.5z" />
+          <path d="M11 8.5v7" />
+          <path d="M13 8.5v7" />
+          <path d="M12 20c2 0 3-1 3-2.5v-1c0-.5-.5-1-1-1h-4c-.5 0-1 .5-1 1v1c0 1.5 1 2.5 3 2.5z" />
         </svg>
       ),
       title: "Densitometria Óssea",
