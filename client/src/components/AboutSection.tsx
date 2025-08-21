@@ -179,7 +179,7 @@ export default function AboutSection() {
                       key={index}
                       src={image.src}
                       alt={image.alt}
-                      className={`absolute inset-0 w-full h-full object-contain rounded-xl transition-all duration-700 ease-in-out ${
+                      className={`absolute inset-0 w-full h-full object-cover rounded-xl transition-all duration-700 ease-in-out ${
                         index === currentImageIndex 
                           ? 'opacity-100' 
                           : 'opacity-0'
