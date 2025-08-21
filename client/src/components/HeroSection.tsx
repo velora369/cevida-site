@@ -62,11 +62,11 @@ export default function HeroSection() {
                 },
                 {
                   icon: <ExperienceIcon size={24} className="text-white" />,
-                  text: "+15 anos de experiência"
+                  text: "Tecnologia de ponta nos exames"
                 },
                 {
                   icon: <HeartCareIcon size={24} className="text-white" />,
-                  text: "Atendimento humanizado"
+                  text: "Resultados com precisão e agilidade"
                 }
               ].map((feature, index) => (
                 <div 
