@@ -204,35 +204,19 @@ export default function ServicesSection() {
               <h3 className="text-3xl font-bold text-gray-800 mb-12 text-center" data-testid="all-services-title">
                 Todos os Nossos Serviços
               </h3>
-              <div className="grid md:grid-cols-2 gap-8">
-                <div className="space-y-6">
-                  {allServices.slice(0, 4).map((service, index) => (
-                    <div key={index} className="flex items-center justify-between space-x-4 group bg-white/50 p-4 rounded-2xl border border-gray-100 hover:border-clinic-red-light transition-all duration-300" data-testid={`service-item-${index}`}>
-                      <span className="text-gray-700 text-lg leading-relaxed flex-1">{service.name}</span>
-                      <button
-                        onClick={() => setSelectedService(service)}
-                        className="bg-clinic-red text-white px-4 py-2 rounded-xl text-sm font-medium hover:bg-red-600 transition-colors duration-300 whitespace-nowrap"
-                        data-testid={`service-learn-more-${index}`}
-                      >
-                        Saiba Mais
-                      </button>
-                    </div>
-                  ))}
-                </div>
-                <div className="space-y-6">
-                  {allServices.slice(4).map((service, index) => (
-                    <div key={index + 4} className="flex items-center justify-between space-x-4 group bg-white/50 p-4 rounded-2xl border border-gray-100 hover:border-clinic-red-light transition-all duration-300" data-testid={`service-item-${index + 4}`}>
-                      <span className="text-gray-700 text-lg leading-relaxed flex-1">{service.name}</span>
-                      <button
-                        onClick={() => setSelectedService(service)}
-                        className="bg-clinic-red text-white px-4 py-2 rounded-xl text-sm font-medium hover:bg-red-600 transition-colors duration-300 whitespace-nowrap"
-                        data-testid={`service-learn-more-${index + 4}`}
-                      >
-                        Saiba Mais
-                      </button>
-                    </div>
-                  ))}
-                </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {allServices.map((service, index) => (
+                  <div key={index} className="flex items-center justify-between space-x-4 group bg-white/50 p-4 rounded-2xl border border-gray-100 hover:border-clinic-red-light transition-all duration-300 min-h-[80px]" data-testid={`service-item-${index}`}>
+                    <span className="text-gray-700 text-lg leading-relaxed flex-1 py-2">{service.name}</span>
+                    <button
+                      onClick={() => setSelectedService(service)}
+                      className="bg-clinic-red text-white px-4 py-2 rounded-xl text-sm font-medium hover:bg-red-600 transition-colors duration-300 whitespace-nowrap flex-shrink-0"
+                      data-testid={`service-learn-more-${index}`}
+                    >
+                      Saiba Mais
+                    </button>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
