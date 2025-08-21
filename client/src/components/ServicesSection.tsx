@@ -59,9 +59,14 @@ export default function ServicesSection() {
     {
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
-          <path d="M5.5 8.5L9 12L18.5 2.5" />
-          <path d="M12 12C12 17 8 21 3 21L4 16C4 13 6 11 9 11" />
-          <path d="M21 12C21 17 17 21 12 21L13 16C13 13 15 11 18 11" />
+          <path d="M12 2v20" />
+          <path d="M8 5h8" />
+          <path d="M6 8h12" />
+          <path d="M8 11h8" />
+          <path d="M10 14h4" />
+          <path d="M8 17h8" />
+          <circle cx="12" cy="2" r="1" />
+          <circle cx="12" cy="22" r="1" />
         </svg>
       ),
       title: "Densitometria Óssea",
