@@ -43,10 +43,6 @@ export default function FaqSection() {
     {
       question: "Os equipamentos são modernos e seguros?",
       answer: "Sim! Utilizamos equipamentos de última geração, constantemente atualizados e com certificação de qualidade. Seguimos rigorosos protocolos de segurança e manutenção preventiva."
-    },
-    {
-      question: "Há estacionamento no local?",
-      answer: "Sim, oferecemos estacionamento gratuito para nossos pacientes, facilitando o acesso e garantindo comodidade durante sua visita à nossa clínica."
     }
   ];
 
