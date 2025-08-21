@@ -55,9 +55,6 @@ export default function FloatingWhatsApp() {
             <div className="absolute top-1/2 -right-1 transform -translate-y-1/2 w-2 h-2 bg-white rotate-45 border-r border-b border-gray-200"></div>
           </div>
         </div>
-        
-        {/* Ripple effect */}
-        <div className="absolute inset-0 rounded-full animate-ping bg-green-400 opacity-20"></div>
       </a>
     </div>
   );
