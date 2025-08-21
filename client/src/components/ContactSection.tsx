@@ -8,7 +8,6 @@ import { useToast } from "@/hooks/use-toast";
 export default function ContactSection() {
   const [formData, setFormData] = useState({
     name: "",
-    phone: "",
     examType: ""
   });
   const { toast } = useToast();
@@ -41,7 +40,7 @@ export default function ContactSection() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
-    if (!formData.name || !formData.phone || !formData.examType) {
+    if (!formData.name || !formData.examType) {
       toast({
         title: "Campos obrigatórios",
         description: "Por favor, preencha todos os campos do formulário.",
@@ -50,11 +49,11 @@ export default function ContactSection() {
       return;
     }
 
-    const message = `Olá! Gostaria de agendar um exame na CEVIDA Diagnósticos.%0A%0ANome: ${encodeURIComponent(formData.name)}%0ATelefone: ${encodeURIComponent(formData.phone)}%0ATipo de Exame: ${encodeURIComponent(formData.examType)}`;
+    const message = `Olá! Gostaria de agendar um exame na CEVIDA Diagnósticos.%0A%0ANome: ${encodeURIComponent(formData.name)}%0ATipo de Exame: ${encodeURIComponent(formData.examType)}`;
     window.open(`https://wa.me/5593992318885?text=${message}`, '_blank');
     
     // Reset form
-    setFormData({ name: "", phone: "", examType: "" });
+    setFormData({ name: "", examType: "" });
     
     toast({
       title: "Redirecionando para WhatsApp",
@@ -219,21 +218,6 @@ export default function ContactSection() {
                       className="w-full px-4 py-3 rounded-2xl border border-gray-200 focus:ring-2 focus:ring-clinic-red focus:border-transparent transition-all duration-300 bg-white/50 backdrop-blur-sm"
                       placeholder="Digite seu nome completo"
                       data-testid="input-name"
-                    />
-                  </div>
-
-                  <div className="space-y-2">
-                    <Label htmlFor="phone" className="text-sm font-medium text-gray-700">
-                      Telefone/WhatsApp *
-                    </Label>
-                    <Input
-                      type="tel"
-                      id="phone"
-                      value={formData.phone}
-                      onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                      required
-                      className="w-full px-4 py-3 rounded-2xl border border-gray-200 focus:ring-2 focus:ring-clinic-red focus:border-transparent transition-all duration-300 bg-white/50 backdrop-blur-sm"
-                      data-testid="input-phone"
                     />
                   </div>
 
