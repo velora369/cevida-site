@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import { ShieldProtectionIcon, InnovationIcon, QualityIcon, MedicalCheckIcon } from "./CustomIcons";
+import { ShieldProtectionIcon, InnovationIcon, QualityIcon, TrustIcon } from "./CustomIcons";
 
 export default function BenefitsSection() {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -42,7 +42,7 @@ export default function BenefitsSection() {
       gradient: "from-amber-500/10 to-orange-500/10"
     },
     {
-      icon: <MedicalCheckIcon size={32} className="text-clinic-red" />,
+      icon: <TrustIcon size={32} className="text-clinic-red" />,
       title: "Confiança Total",
       description: "Mais de 15 anos de experiência oferecendo confiança e tranquilidade aos nossos pacientes.",
       gradient: "from-green-500/10 to-emerald-500/10"
