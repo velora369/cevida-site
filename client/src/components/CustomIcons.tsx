@@ -34,10 +34,7 @@ export const MedicalCheckIcon = ({ className = "", size = 24 }: IconProps) => (
     strokeLinejoin="round"
     className={className}
   >
-    <path d="M9 7H6a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-3" />
-    <path d="M9 7v0a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v0" />
-    <circle cx="17" cy="10" r="3" />
-    <path d="M15.5 9.5l1 1L19 8" />
+    <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26" />
   </svg>
 );
 
