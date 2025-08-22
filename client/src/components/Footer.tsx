@@ -139,8 +139,46 @@ export default function Footer() {
           </div>
         </div>
 
+        {/* Security Badge and Social Links */}
+        <div className="bg-gray-50 rounded-2xl p-8 mb-8">
+          <div className="flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
+            {/* Security Seal */}
+            <div className="flex items-center space-x-4 bg-white rounded-xl p-4 shadow-sm border border-gray-200 group hover:shadow-md transition-shadow duration-300" data-testid="security-badge">
+              <div className="bg-green-100 p-3 rounded-xl group-hover:bg-green-200 transition-colors duration-300">
+                <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+              </div>
+              <div>
+                <h5 className="text-sm font-semibold text-gray-800">Site Seguro</h5>
+                <p className="text-xs text-gray-600">Seus dados estão protegidos</p>
+              </div>
+            </div>
+
+            {/* Social Media Links */}
+            <div className="flex items-center space-x-4">
+              <span className="text-gray-600 text-sm font-medium">Siga-nos:</span>
+              <div className="flex space-x-3">
+                {socialLinks.map((social, index) => (
+                  <a
+                    key={index}
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`${social.color} hover:scale-110 transition-all duration-300 p-3 rounded-xl bg-white shadow-sm hover:shadow-md border border-gray-200`}
+                    aria-label={social.label}
+                    data-testid={`social-link-${social.label.toLowerCase()}`}
+                  >
+                    {social.icon}
+                  </a>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Copyright */}
-        <div className="border-t border-gray-300 mt-12 pt-8">
+        <div className="border-t border-gray-300 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-gray-500 text-center md:text-left" data-testid="footer-copyright">
               © 2025 CEVIDA Diagnósticos – Todos os direitos reservados
