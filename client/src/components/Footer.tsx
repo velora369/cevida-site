@@ -155,25 +155,6 @@ export default function Footer() {
               </div>
             </div>
 
-            {/* Social Media Links */}
-            <div className="flex items-center space-x-4">
-              <span className="text-gray-600 text-sm font-medium">Siga-nos:</span>
-              <div className="flex space-x-3">
-                {socialLinks.map((social, index) => (
-                  <a
-                    key={index}
-                    href={social.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={`${social.color} hover:scale-110 transition-all duration-300 p-3 rounded-xl bg-white shadow-sm hover:shadow-md border border-gray-200`}
-                    aria-label={social.label}
-                    data-testid={`social-link-${social.label.toLowerCase()}`}
-                  >
-                    {social.icon}
-                  </a>
-                ))}
-              </div>
-            </div>
           </div>
         </div>
 
