@@ -31,19 +31,19 @@ export default function ServicesSection() {
     {
       title: "Raio-X Digital",
       description: "Alta definição, panorâmico e coluna total com tecnologia digital avançada",
-      whatsappText: "Gostaria de agendar um Raio-X Digital",
+      whatsappText: "Olá, gostaria de agendar um exame de Raio-X Digital",
       gradient: "from-blue-500 to-blue-600"
     },
     {
       title: "Ultrassonografia Avançada",
       description: "Geral, Doppler, obstétrica, morfológica e músculo-esquelética",
-      whatsappText: "Gostaria de agendar uma Ultrassonografia",
+      whatsappText: "Olá, gostaria de agendar um exame de Ultrassonografia Avançada",
       gradient: "from-clinic-red to-red-600"
     },
     {
       title: "Densitometria Óssea",
       description: "Coluna, fêmur e corpo total para diagnóstico de osteoporose",
-      whatsappText: "Gostaria de agendar uma Densitometria Óssea",
+      whatsappText: "Olá, gostaria de agendar um exame de Densitometria Óssea",
       gradient: "from-emerald-500 to-emerald-600"
     }
   ];
@@ -56,56 +56,56 @@ export default function ServicesSection() {
       title: "Raio-X Digital",
       description: "Exame de imagem que utiliza tecnologia digital avançada para diagnóstico preciso de estruturas ósseas e tecidos moles.",
       details: "Nossa tecnologia digital oferece imagens de alta definição com menor radiação. Realizamos raio-x de tórax, membros, coluna vertebral, panorâmico e muito mais.",
-      whatsappText: "Gostaria de agendar um Raio-X Digital"
+      whatsappText: "Olá, gostaria de agendar um exame de Raio-X Digital"
     },
     {
       name: "Ultrassonografia geral e avançada",
       title: "Ultrassonografia",
       description: "Exame não invasivo que utiliza ondas sonoras para visualizar órgãos internos e estruturas do corpo.",
       details: "Realizamos ultrassom abdominal, pélvico, obstétrico, morfológico, Doppler vascular, tireoide, mama, próstata e muito mais. Equipamentos de última geração.",
-      whatsappText: "Gostaria de agendar uma Ultrassonografia"
+      whatsappText: "Olá, gostaria de agendar um exame de Ultrassonografia"
     },
     {
       name: "Densitometria Óssea (coluna, fêmur e corpo total)",
       title: "Densitometria Óssea",
       description: "Exame essencial para diagnóstico da osteoporose e avaliação da densidade mineral óssea.",
       details: "Avaliação precisa da densidade óssea na coluna lombar, fêmur e corpo total. Fundamental para prevenção e acompanhamento de doenças ósseas.",
-      whatsappText: "Gostaria de agendar uma Densitometria Óssea"
+      whatsappText: "Olá, gostaria de agendar um exame de Densitometria Óssea"
     },
     {
       name: "PAAF de Tireóide",
       title: "PAAF de Tireóide",
       description: "Punção aspirativa por agulha fina para avaliação de nódulos tireoidianos.",
       details: "Procedimento minimamente invasivo guiado por ultrassom para coleta de material celular de nódulos da tireóide, auxiliando no diagnóstico diferencial.",
-      whatsappText: "Gostaria de agendar uma PAAF de Tireóide"
+      whatsappText: "Olá, gostaria de agendar um exame de PAAF de Tireóide"
     },
     {
       name: "Alcoolização de nódulos tireoidianos",
       title: "Alcoolização de Nódulos",
       description: "Tratamento minimamente invasivo para nódulos tireoidianos císticos.",
       details: "Procedimento realizado com guia ultrassonográfica para tratamento de nódulos císticos benignos da tireóide, oferecendo alternativa não cirúrgica.",
-      whatsappText: "Gostaria de agendar Alcoolização de nódulos tireoidianos"
+      whatsappText: "Olá, gostaria de agendar um procedimento de Alcoolização de nódulos tireoidianos"
     },
     {
       name: "Biópsias guiadas por ultrassom",
       title: "Biópsias Guiadas",
       description: "Coleta precisa de material para análise histopatológica com orientação ultrassonográfica.",
       details: "Procedimentos de biópsia em diversos órgãos realizados com precisão através da orientação ultrassonográfica, garantindo segurança e eficácia.",
-      whatsappText: "Gostaria de agendar uma Biópsia guiada"
+      whatsappText: "Olá, gostaria de agendar um exame de Biópsia guiada por ultrassom"
     },
     {
       name: "Histerossonografia",
       title: "Histerossonografia",
       description: "Avaliação detalhada da cavidade uterina através de ultrassom com contraste.",
       details: "Exame especializado que permite avaliação precisa do endométrio e cavidade uterina, auxiliando no diagnóstico de alterações ginecológicas.",
-      whatsappText: "Gostaria de agendar uma Histerossonografia"
+      whatsappText: "Olá, gostaria de agendar um exame de Histerossonografia"
     },
     {
       name: "Histerossalpingografia",
       title: "Histerossalpingografia",
       description: "Exame radiológico para avaliação das trompas de falópio e cavidade uterina.",
       details: "Procedimento com contraste radiológico para investigação de causas de infertilidade e avaliação da permeabilidade tubária.",
-      whatsappText: "Gostaria de agendar uma Histerossalpingografia"
+      whatsappText: "Olá, gostaria de agendar um exame de Histerossalpingografia"
     }
   ];
 
