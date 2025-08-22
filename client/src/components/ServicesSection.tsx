@@ -179,8 +179,8 @@ export default function ServicesSection() {
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {allServices.map((service, index) => (
-                  <div key={index} className="flex items-center justify-between space-x-4 group bg-white/50 p-4 rounded-2xl border border-gray-100 hover:border-clinic-red-light transition-all duration-300 min-h-[80px]" data-testid={`service-item-${index}`}>
-                    <span className="text-gray-700 text-lg leading-relaxed flex-1 py-2">{service.name}</span>
+                  <div key={index} className="flex items-center justify-between space-x-2 sm:space-x-4 group bg-white/50 p-3 sm:p-4 rounded-2xl border border-gray-100 hover:border-clinic-red-light transition-all duration-300 min-h-[80px]" data-testid={`service-item-${index}`}>
+                    <span className="text-gray-700 text-sm sm:text-lg leading-relaxed flex-1 py-2 break-words hyphens-auto">{service.name}</span>
                     <button
                       onClick={() => setSelectedService(service)}
                       className="bg-clinic-red text-white px-4 py-2 rounded-xl text-sm font-medium hover:bg-red-600 transition-colors duration-300 whitespace-nowrap flex-shrink-0"
