@@ -113,19 +113,19 @@ export default function Header() {
           >
             <div className="relative w-6 h-6">
               <span 
-                className={`absolute block w-full h-0.5 bg-current transform transition-all duration-300 ${
+                className={`absolute block w-full h-0.5 bg-clinic-red transform transition-all duration-300 ${
                   isMobileMenuOpen ? 'rotate-45 top-3' : 'top-1'
-                } ${isScrolled ? 'bg-gray-800' : 'bg-white'}`}
+                }`}
               />
               <span 
-                className={`absolute block w-full h-0.5 bg-current transform transition-all duration-300 top-3 ${
+                className={`absolute block w-full h-0.5 bg-clinic-red transform transition-all duration-300 top-3 ${
                   isMobileMenuOpen ? 'opacity-0' : 'opacity-100'
-                } ${isScrolled ? 'bg-gray-800' : 'bg-white'}`}
+                }`}
               />
               <span 
-                className={`absolute block w-full h-0.5 bg-current transform transition-all duration-300 ${
+                className={`absolute block w-full h-0.5 bg-clinic-red transform transition-all duration-300 ${
                   isMobileMenuOpen ? '-rotate-45 top-3' : 'top-5'
-                } ${isScrolled ? 'bg-gray-800' : 'bg-white'}`}
+                }`}
               />
             </div>
           </button>
