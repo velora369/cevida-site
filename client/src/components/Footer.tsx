@@ -140,19 +140,17 @@ export default function Footer() {
         </div>
 
         {/* Security Badge */}
-        <div className="bg-gray-50 rounded-2xl p-8 mb-8">
-          <div className="flex justify-center items-center">
-            {/* Security Seal */}
-            <div className="flex items-center space-x-3 bg-gradient-to-r from-clinic-red-light to-red-50 rounded-2xl p-4 border border-clinic-red/20 group hover:from-clinic-red/10 hover:to-red-100 transition-all duration-300" data-testid="security-badge">
-              <div className="bg-clinic-red p-2 rounded-full">
-                <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                </svg>
-              </div>
-              <div>
-                <h5 className="text-sm font-medium text-gray-800">Site Seguro</h5>
-                <p className="text-xs text-gray-500">Dados protegidos</p>
-              </div>
+        <div className="flex justify-center items-center mb-8">
+          {/* Security Seal */}
+          <div className="flex items-center space-x-3 bg-gradient-to-r from-clinic-red-light to-red-50 rounded-2xl p-4 border border-clinic-red/20 group hover:from-clinic-red/10 hover:to-red-100 transition-all duration-300" data-testid="security-badge">
+            <div className="bg-clinic-red p-2 rounded-full">
+              <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+              </svg>
+            </div>
+            <div>
+              <h5 className="text-sm font-medium text-gray-800">Site Seguro</h5>
+              <p className="text-xs text-gray-500">Dados protegidos</p>
             </div>
           </div>
         </div>
