@@ -139,9 +139,9 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Security Badge and Social Links */}
+        {/* Security Badge */}
         <div className="bg-gray-50 rounded-2xl p-8 mb-8">
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
+          <div className="flex justify-center items-center">
             {/* Security Seal */}
             <div className="flex items-center space-x-3 bg-gradient-to-r from-clinic-red-light to-red-50 rounded-2xl p-4 border border-clinic-red/20 group hover:from-clinic-red/10 hover:to-red-100 transition-all duration-300" data-testid="security-badge">
               <div className="bg-clinic-red p-2 rounded-full">
@@ -154,7 +154,6 @@ export default function Footer() {
                 <p className="text-xs text-gray-500">Dados protegidos</p>
               </div>
             </div>
-
           </div>
         </div>
 
