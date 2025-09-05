@@ -152,7 +152,7 @@ export default function Footer() {
                   href="https://medgrowthmkt.com/" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="text-gray-500/70 hover:text-gray-600/80 transition-colors duration-300 opacity-60 hover:opacity-80"
+                  className="text-clinic-red/70 hover:text-clinic-red/90 transition-colors duration-300 opacity-60 hover:opacity-80"
                   data-testid="developed-by-link"
                 >
                   Desenvolvido por MedGrowth
