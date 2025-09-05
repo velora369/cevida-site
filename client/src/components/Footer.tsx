@@ -147,12 +147,16 @@ export default function Footer() {
               © 2025 CEVIDA Diagnósticos – Todos os direitos reservados
             </p>
             <div className="flex flex-col items-center md:items-end space-y-3">
-              <div className="flex items-center space-x-2 text-gray-500 text-sm">
-                <span>Desenvolvido com</span>
-                <svg className="w-4 h-4 text-clinic-red animate-pulse" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
-                </svg>
-                <span>para sua saúde</span>
+              <div className="text-gray-500 text-sm">
+                <a 
+                  href="https://medgrowthmkt.com/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-gray-500/70 hover:text-gray-600/80 transition-colors duration-300 opacity-60 hover:opacity-80"
+                  data-testid="developed-by-link"
+                >
+                  Desenvolvido por MedGrowth
+                </a>
               </div>
               {/* Security Badge */}
               <div className="flex items-center space-x-3 bg-gradient-to-r from-clinic-red-light to-red-50 rounded-2xl p-3 border border-clinic-red/20 group hover:from-clinic-red/10 hover:to-red-100 transition-all duration-300" data-testid="security-badge">
