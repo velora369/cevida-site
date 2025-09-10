@@ -106,8 +106,8 @@ export default function HeroSection() {
           {/* Enhanced Image Section */}
           <div className="relative opacity-0 translate-y-8 transition-all duration-1000 ease-out" style={{animation: 'fadeInUp 1s 0.5s ease-out forwards'}}>
             {/* Main Image Container */}
-            <div className="relative group">
-              <div className="absolute -inset-4 bg-gradient-to-r from-clinic-red via-red-500 to-red-600 rounded-3xl blur-2xl opacity-20 group-hover:opacity-30 transition-opacity duration-500"></div>
+            <div className="relative group overflow-hidden md:overflow-visible">
+              <div className="absolute -inset-4 bg-gradient-to-r from-clinic-red via-red-500 to-red-600 rounded-3xl blur-2xl opacity-20 group-hover:opacity-30 transition-opacity duration-500 hidden md:block"></div>
               <div className="relative bg-white/80 backdrop-blur-sm p-4 rounded-3xl shadow-2xl border border-white/50">
                 <img 
                   src="https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/08/hero-img.jpeg" 
@@ -139,7 +139,7 @@ export default function HeroSection() {
             </div>
             
             {/* Doctor Card for Mobile */}
-            <div className="mt-16 bg-white/90 backdrop-blur-md p-6 rounded-3xl shadow-2xl border border-white/50 hover:scale-105 transition-transform duration-300 lg:hidden relative z-10">
+            <div className="mt-16 bg-white p-6 rounded-3xl shadow-2xl border border-gray-100 hover:scale-105 transition-transform duration-300 lg:hidden relative z-10">
               <div className="flex items-center space-x-4">
                 <div className="bg-gradient-to-r from-clinic-red to-red-500 text-white w-16 h-16 rounded-2xl flex items-center justify-center shadow-lg shadow-clinic-red/25">
                   <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
