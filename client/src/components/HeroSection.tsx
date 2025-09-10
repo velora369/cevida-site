@@ -130,6 +130,10 @@ export default function HeroSection() {
                   <p className="font-bold text-gray-800 text-lg">Dr. Luiz Carlos</p>
                   <p className="text-clinic-red font-medium">Radiologista CBR</p>
                   <p className="text-gray-600 text-sm">+15 anos experiência</p>
+                  <div className="mt-2 space-y-1 text-xs text-gray-600">
+                    <p>CRM: <a href="https://cremepa.org.br/busca-medicos" target="_blank" rel="noopener noreferrer" className="text-clinic-red hover:text-red-600 font-medium underline hover:no-underline transition-colors duration-200">9132/PA</a></p>
+                    <p>RQE Nº: <a href="https://cremepa.org.br/busca-medicos" target="_blank" rel="noopener noreferrer" className="text-clinic-red hover:text-red-600 font-medium underline hover:no-underline transition-colors duration-200">2899</a></p>
+                  </div>
                 </div>
               </div>
             </div>
