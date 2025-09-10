@@ -45,6 +45,12 @@ export default function ServicesSection() {
       description: "Coluna, fêmur e corpo total para diagnóstico de osteoporose",
       whatsappText: "Olá, gostaria de agendar um exame de Densitometria Óssea",
       gradient: "from-emerald-500 to-emerald-600"
+    },
+    {
+      title: "Densitometria de Corpo Total",
+      description: "Avaliação de massa magra e massa gorda",
+      whatsappText: "Olá, gostaria de agendar um exame de Densitometria de Corpo Total",
+      gradient: "from-purple-500 to-purple-600"
     }
   ];
 
@@ -135,7 +141,7 @@ export default function ServicesSection() {
         </div>
 
         {/* Main Services Highlight */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-12 md:mb-20">
+        <div className="grid grid-cols-1 gap-6 md:gap-8 mb-12 md:mb-20 max-w-4xl mx-auto">
           {mainServices.map((service, index) => (
             <div 
               key={index}
