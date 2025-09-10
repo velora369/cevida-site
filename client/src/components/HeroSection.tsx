@@ -106,13 +106,13 @@ export default function HeroSection() {
           {/* Enhanced Image Section */}
           <div className="relative opacity-0 translate-y-8 transition-all duration-1000 ease-out" style={{animation: 'fadeInUp 1s 0.5s ease-out forwards'}}>
             {/* Main Image Container */}
-            <div className="relative group overflow-hidden md:overflow-visible">
+            <div className="relative group">
               <div className="absolute -inset-4 bg-gradient-to-r from-clinic-red via-red-500 to-red-600 rounded-3xl blur-2xl opacity-20 group-hover:opacity-30 transition-opacity duration-500 hidden md:block"></div>
-              <div className="relative bg-white/80 backdrop-blur-sm p-4 rounded-3xl shadow-2xl border border-white/50">
+              <div className="relative">
                 <img 
                   src="https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/08/hero-img.jpeg" 
                   alt="Equipamentos modernos de diagnóstico por imagem" 
-                  className="rounded-2xl w-full h-auto shadow-xl group-hover:scale-105 transition-transform duration-700"
+                  className="rounded-2xl w-full h-auto shadow-2xl shadow-clinic-red/20 group-hover:scale-105 transition-all duration-700"
                   data-testid="hero-image"
                 />
               </div>
