@@ -139,7 +139,7 @@ export default function HeroSection() {
             </div>
             
             {/* Doctor Card for Mobile */}
-            <div className="mt-8 bg-white/90 backdrop-blur-md p-6 rounded-3xl shadow-2xl border border-white/50 hover:scale-105 transition-transform duration-300 lg:hidden">
+            <div className="mt-16 bg-white/90 backdrop-blur-md p-6 rounded-3xl shadow-2xl border border-white/50 hover:scale-105 transition-transform duration-300 lg:hidden relative z-10">
               <div className="flex items-center space-x-4">
                 <div className="bg-gradient-to-r from-clinic-red to-red-500 text-white w-16 h-16 rounded-2xl flex items-center justify-center shadow-lg shadow-clinic-red/25">
                   <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
