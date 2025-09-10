@@ -143,10 +143,10 @@ export default function Footer() {
         {/* Copyright */}
         <div className="border-t border-gray-300 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <p className="text-gray-500 text-center md:text-left" data-testid="footer-copyright">
-              © 2025 CEVIDA Diagnósticos – Todos os direitos reservados
-            </p>
-            <div className="flex flex-col items-center md:items-end space-y-3">
+            <div className="flex flex-col items-center md:items-start space-y-2">
+              <p className="text-gray-500 text-center md:text-left" data-testid="footer-copyright">
+                © 2025 CEVIDA Diagnósticos – Todos os direitos reservados
+              </p>
               <div className="text-gray-500 text-sm">
                 <a 
                   href="https://medgrowthmkt.com/" 
@@ -158,6 +158,8 @@ export default function Footer() {
                   Desenvolvido por MedGrowth
                 </a>
               </div>
+            </div>
+            <div className="flex flex-col items-center md:items-end">
               {/* Security Badge */}
               <div className="flex items-center space-x-3 bg-gradient-to-r from-clinic-red-light to-red-50 rounded-2xl p-3 border border-clinic-red/20 group hover:from-clinic-red/10 hover:to-red-100 transition-all duration-300" data-testid="security-badge">
                 <div className="bg-clinic-red p-1.5 rounded-full">
