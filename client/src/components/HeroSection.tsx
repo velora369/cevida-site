@@ -119,7 +119,27 @@ export default function HeroSection() {
             </div>
             
             {/* Doctor Card with Glassmorphism */}
-            <div className="absolute -bottom-8 -left-8 bg-white/90 backdrop-blur-md p-6 rounded-3xl shadow-2xl border border-white/50 hidden lg:block hover:scale-105 transition-transform duration-300">
+            <div className="absolute -bottom-8 -left-8 bg-white/90 backdrop-blur-md p-6 rounded-3xl shadow-2xl border border-white/50 hover:scale-105 transition-transform duration-300 hidden lg:block">
+              <div className="flex items-center space-x-4">
+                <div className="bg-gradient-to-r from-clinic-red to-red-500 text-white w-16 h-16 rounded-2xl flex items-center justify-center shadow-lg shadow-clinic-red/25">
+                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                  </svg>
+                </div>
+                <div>
+                  <p className="font-bold text-gray-800 text-lg">Dr. Luiz Carlos</p>
+                  <p className="text-clinic-red font-medium">Radiologista CBR</p>
+                  <p className="text-gray-600 text-sm">+15 anos experiência</p>
+                  <div className="mt-2 space-y-1 text-xs text-gray-600">
+                    <p>CRM: <a href="https://cremepa.org.br/busca-medicos" target="_blank" rel="noopener noreferrer" className="text-clinic-red hover:text-red-600 font-medium underline hover:no-underline transition-colors duration-200">9132/PA</a></p>
+                    <p>RQE Nº: <a href="https://cremepa.org.br/busca-medicos" target="_blank" rel="noopener noreferrer" className="text-clinic-red hover:text-red-600 font-medium underline hover:no-underline transition-colors duration-200">2899</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            {/* Doctor Card for Mobile */}
+            <div className="mt-8 bg-white/90 backdrop-blur-md p-6 rounded-3xl shadow-2xl border border-white/50 hover:scale-105 transition-transform duration-300 lg:hidden">
               <div className="flex items-center space-x-4">
                 <div className="bg-gradient-to-r from-clinic-red to-red-500 text-white w-16 h-16 rounded-2xl flex items-center justify-center shadow-lg shadow-clinic-red/25">
                   <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
