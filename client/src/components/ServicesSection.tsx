@@ -82,7 +82,7 @@ export default function ServicesSection() {
       whatsappText: "Olá, gostaria de agendar um exame de Ultrassonografia",
     },
     {
-      name: "Densitometria Óssea e Densitometria de Corpo Total (coluna, fêmur e corpo total)",
+      name: "Densitometria Óssea e Densitometria de Corpo Total",
       title: "Densitometria Óssea e de Corpo Total",
       description:
         "Exame essencial para diagnóstico da osteoporose, avaliação da densidade mineral óssea e osteopenia.",
