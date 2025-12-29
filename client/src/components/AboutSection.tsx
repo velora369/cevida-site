@@ -50,7 +50,7 @@ export default function AboutSection() {
       )
     },
     {
-      number: "1000+",
+      number: "50 mil+",
       label: "Exames Realizados",
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">

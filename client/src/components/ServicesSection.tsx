@@ -85,7 +85,7 @@ export default function ServicesSection() {
       name: "Densitometria Óssea",
       title: "Densitometria Óssea",
       description:
-        "Densitometria óssea de coluna e fêmur para avaliação de densidade mineral óssea ( osteopenia e osteoporose ).",
+        "Densitometria óssea de coluna e fêmur para avaliação de densidade mineral óssea (osteopenia e osteoporose).",
       details:
         "Avaliação precisa da densidade óssea na coluna lombar e fêmur. Fundamental para prevenção e acompanhamento de doenças ósseas como osteopenia e osteoporose.",
       whatsappText: "Olá, gostaria de agendar um exame de Densitometria Óssea",
