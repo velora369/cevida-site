@@ -30,7 +30,7 @@ export default function AboutSection() {
 
   const stats = [
     {
-      number: "15+",
+      number: "20+",
       label: "Anos de Experiência",
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
@@ -94,7 +94,7 @@ export default function AboutSection() {
                 Dr. Luiz Carlos Cavaleiro de Macedo Júnior
               </h3>
               <p className="text-gray-600 leading-relaxed text-lg" data-testid="doctor-bio">
-                Dr. Luiz Carlos Cavaleiro de Macedo Júnior é médico radiologista, com mais de 15 anos de atuação em diagnóstico por imagem. Especialista titulado pelo Colégio Brasileiro de Radiologia, é responsável técnico da CEVIDA Diagnósticos em Santarém-PA, oferecendo exames de alta precisão em ultrassonografia, raio-X e densitometria óssea.
+                Dr. Luiz Carlos Cavaleiro de Macedo Júnior é médico radiologista, com mais de 20 anos de atuação em diagnóstico por imagem. Especialista titulado pelo Colégio Brasileiro de Radiologia, é responsável técnico da CEVIDA Diagnósticos em Santarém-PA, oferecendo exames de alta precisão em ultrassonografia, raio-X e densitometria óssea.
               </p>
             </div>
 

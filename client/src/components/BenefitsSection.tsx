@@ -49,7 +49,7 @@ export default function BenefitsSection() {
         </svg>
       ),
       title: "Confiança Total",
-      description: "Mais de 15 anos de experiência oferecendo confiança e tranquilidade aos nossos pacientes.",
+      description: "Mais de 20 anos de experiência oferecendo confiança e tranquilidade aos nossos pacientes.",
       gradient: "from-green-500/10 to-emerald-500/10"
     }
   ];
@@ -112,8 +112,8 @@ export default function BenefitsSection() {
         <div className="mt-20 glass-card p-8 md:p-12">
           <div className="grid md:grid-cols-3 gap-8 text-center">
             {[
-              { number: "15+", label: "Anos de Experiência", icon: "🏆" },
-              { number: "5000+", label: "Exames Realizados", icon: "📊" },
+              { number: "20+", label: "Anos de Experiência", icon: "🏆" },
+              { number: "50 mil+", label: "Exames Realizados", icon: "📊" },
               { number: "100%", label: "Satisfação dos Pacientes", icon: "❤️" }
             ].map((stat, index) => (
               <div 

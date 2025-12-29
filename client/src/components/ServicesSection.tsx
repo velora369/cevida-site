@@ -47,7 +47,7 @@ export default function ServicesSection() {
     {
       title: "Densitometria Óssea",
       description:
-        "Coluna, fêmur e corpo total para diagnóstico de osteoporose",
+        "Somente coluna e fêmur - Coluna e fêmur para diagnóstico de osteoporose",
       whatsappText: "Olá, gostaria de agendar um exame de Densitometria Óssea",
       gradient: "from-emerald-500 to-emerald-600",
     },
@@ -67,7 +67,7 @@ export default function ServicesSection() {
       name: "Raio-X Digital (alta definição, panorâmico e coluna total)",
       title: "Raio-X Digital",
       description:
-        "Exame de imagem que utiliza tecnologia digital avançada para diagnóstico preciso de estruturas ósseas e tecidos moles.",
+        "Exame de imagem que utiliza tecnologia digital avançada para diagnóstico preciso de estruturas ósseas.",
       details:
         "Nossa tecnologia digital oferece imagens de alta definição com menor radiação. Realizamos raio-x de tórax, membros, coluna vertebral, panorâmico e muito mais.",
       whatsappText: "Olá, gostaria de agendar um exame de Raio-X Digital",
@@ -82,13 +82,22 @@ export default function ServicesSection() {
       whatsappText: "Olá, gostaria de agendar um exame de Ultrassonografia",
     },
     {
-      name: "Densitometria Óssea e Densitometria de Corpo Total",
-      title: "Densitometria Óssea e de Corpo Total",
+      name: "Densitometria Óssea",
+      title: "Densitometria Óssea",
       description:
-        "Exame essencial para diagnóstico da osteoporose, avaliação da densidade mineral óssea e osteopenia.",
+        "Densitometria óssea de coluna e fêmur para avaliação de densidade mineral óssea ( osteopenia e osteoporose ).",
       details:
-        "Avaliação precisa da densidade óssea na coluna lombar, fêmur e corpo total. Fundamental para prevenção e acompanhamento de doenças ósseas.",
-      whatsappText: "Olá, gostaria de agendar um exame de Densitometria",
+        "Avaliação precisa da densidade óssea na coluna lombar e fêmur. Fundamental para prevenção e acompanhamento de doenças ósseas como osteopenia e osteoporose.",
+      whatsappText: "Olá, gostaria de agendar um exame de Densitometria Óssea",
+    },
+    {
+      name: "Densitometria de Corpo Total",
+      title: "Densitometria de Corpo Total",
+      description:
+        "Densitometria de corpo total para avaliação de composição corporal ( massa magra e massa gorda com cálculo % de gordura )",
+      details:
+        "Exame especializado que avalia a composição corporal completa, incluindo massa magra, massa gorda e cálculo percentual de gordura. Ideal para acompanhamento de condicionamento físico e saúde metabólica.",
+      whatsappText: "Olá, gostaria de agendar um exame de Densitometria de Corpo Total",
     },
     {
       name: "PAAF de Tireóide",
