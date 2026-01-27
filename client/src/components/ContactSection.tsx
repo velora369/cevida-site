@@ -10,6 +10,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { useToast } from "@/hooks/use-toast";
+import { reportWhatsAppConversion } from "@/lib/gtag";
 
 export default function ContactSection() {
   const [formData, setFormData] = useState({
@@ -18,6 +19,14 @@ export default function ContactSection() {
   });
   const { toast } = useToast();
   const sectionRef = useRef<HTMLDivElement>(null);
+  const handleWhatsAppLinkClick = (
+    event: React.MouseEvent<HTMLAnchorElement>,
+    link?: string,
+  ) => {
+    if (!link || !link.includes("wa.me")) return;
+    event.preventDefault();
+    reportWhatsAppConversion(link, { openInNewTab: true });
+  };
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -57,7 +66,8 @@ export default function ContactSection() {
     }
 
     const message = `Olá! Gostaria de agendar um exame na CEVIDA Diagnósticos.%0A%0ANome: ${encodeURIComponent(formData.name)}%0ATipo de Exame: ${encodeURIComponent(formData.examType)}`;
-    window.open(`https://wa.me/5593992318885?text=${message}`, "_blank");
+    const whatsappUrl = `https://wa.me/5593992318885?text=${message}`;
+    reportWhatsAppConversion(whatsappUrl, { openInNewTab: true });
 
     // Reset form
     setFormData({ name: "", examType: "" });
@@ -206,6 +216,9 @@ export default function ContactSection() {
                               target="_blank"
                               rel="noopener noreferrer"
                               className="hover:text-red-600 transition-colors text-[#4b5563] font-normal cursor-pointer block"
+                              onClick={(event) =>
+                                handleWhatsAppLinkClick(event, contact.link)
+                              }
                             >
                               <div className="space-y-2">
                                 {contact.info.map((line, lineIndex) => (

@@ -1,3 +1,5 @@
+import { reportWhatsAppConversion } from "@/lib/gtag";
+
 export default function Footer() {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -5,6 +7,7 @@ export default function Footer() {
       element.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   };
+  const whatsappUrl = "https://wa.me/5593992318885";
 
   const quickLinks = [
     { id: 'inicio', label: 'Início' },
@@ -118,10 +121,14 @@ export default function Footer() {
                   </svg>
                 </div>
                 <a 
-                  href="https://wa.me/5593992318885"
+                  href={whatsappUrl}
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="hover:text-clinic-red transition-colors cursor-pointer"
+                  onClick={(event) => {
+                    event.preventDefault();
+                    reportWhatsAppConversion(whatsappUrl, { openInNewTab: true });
+                  }}
                 >
                   <p>(93) 99231-8885</p>
                 </a>

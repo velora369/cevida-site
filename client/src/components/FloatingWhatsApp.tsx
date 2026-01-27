@@ -1,8 +1,11 @@
 import { useState, useEffect } from "react";
+import { reportWhatsAppConversion } from "@/lib/gtag";
 
 export default function FloatingWhatsApp() {
   const [isVisible, setIsVisible] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
+  const whatsappUrl =
+    "https://wa.me/5593992318885?text=Olá! Gostaria de agendar um exame na CEVIDA Diagnósticos.";
 
   useEffect(() => {
     // Show the button after a delay for better UX
@@ -18,12 +21,16 @@ export default function FloatingWhatsApp() {
       isVisible ? 'translate-y-0 opacity-100' : 'translate-y-16 opacity-0'
     }`}>
       <a 
-        href="https://wa.me/5593992318885?text=Olá! Gostaria de agendar um exame na CEVIDA Diagnósticos." 
+        href={whatsappUrl}
         target="_blank" 
         rel="noopener noreferrer"
         className="relative group block"
         data-testid="floating-whatsapp-button"
         title="Agendar pelo WhatsApp"
+        onClick={(event) => {
+          event.preventDefault();
+          reportWhatsAppConversion(whatsappUrl, { openInNewTab: true });
+        }}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >

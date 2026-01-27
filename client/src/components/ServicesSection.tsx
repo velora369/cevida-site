@@ -1,7 +1,15 @@
 import { useEffect, useRef, useState } from "react";
+import { reportWhatsAppConversion } from "@/lib/gtag";
 
 export default function ServicesSection() {
   const sectionRef = useRef<HTMLDivElement>(null);
+  const handleWhatsAppClick = (
+    event: React.MouseEvent<HTMLAnchorElement>,
+    url: string,
+  ) => {
+    event.preventDefault();
+    reportWhatsAppConversion(url, { openInNewTab: true });
+  };
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -208,6 +216,12 @@ export default function ServicesSection() {
                     rel="noopener noreferrer"
                     className="inline-flex items-center text-clinic-red hover:text-red-600 font-semibold text-lg group-hover:scale-105 transition-transform duration-300"
                     data-testid={`service-schedule-${index}`}
+                    onClick={(event) =>
+                      handleWhatsAppClick(
+                        event,
+                        `https://wa.me/5593992318885?text=${encodeURIComponent(service.whatsappText)}`,
+                      )
+                    }
                   >
                     Agendar Agora
                     <svg
@@ -329,6 +343,12 @@ export default function ServicesSection() {
                     rel="noopener noreferrer"
                     className="bg-gradient-to-r from-clinic-red via-red-500 to-red-600 text-white px-8 py-4 rounded-2xl font-semibold text-lg hover:scale-105 hover:shadow-xl hover:shadow-clinic-red/25 transition-all duration-300 inline-flex items-center group"
                     data-testid="modal-schedule-button"
+                    onClick={(event) =>
+                      handleWhatsAppClick(
+                        event,
+                        `https://wa.me/5593992318885?text=${encodeURIComponent(selectedService.whatsappText)}`,
+                      )
+                    }
                   >
                     <svg
                       className="w-6 h-6 mr-3"
