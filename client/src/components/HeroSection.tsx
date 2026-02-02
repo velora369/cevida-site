@@ -1,11 +1,11 @@
 import { useEffect, useRef } from "react";
 import { StarRatingIcon, MedicalCheckIcon, ExperienceIcon, HeartCareIcon } from "./CustomIcons";
 import { reportWhatsAppConversion } from "@/lib/gtag";
+import { getWhatsAppUrl } from "@/lib/whatsapp";
 
 export default function HeroSection() {
   const heroRef = useRef<HTMLDivElement>(null);
-  const whatsappUrl =
-    "https://wa.me/5593992318885?text=Olá! Gostaria de agendar um exame na CEVIDA Diagnósticos.";
+  const whatsappUrl = getWhatsAppUrl();
 
   useEffect(() => {
     const observer = new IntersectionObserver(

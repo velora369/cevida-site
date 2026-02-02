@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
 import { reportWhatsAppConversion } from "@/lib/gtag";
+import { getWhatsAppUrl } from "@/lib/whatsapp";
 
 export default function FloatingWhatsApp() {
   const [isVisible, setIsVisible] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
-  const whatsappUrl =
-    "https://wa.me/5593992318885?text=Olá! Gostaria de agendar um exame na CEVIDA Diagnósticos.";
+  const whatsappUrl = getWhatsAppUrl();
 
   useEffect(() => {
     // Show the button after a delay for better UX

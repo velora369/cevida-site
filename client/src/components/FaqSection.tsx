@@ -1,12 +1,12 @@
 import { useState, useEffect, useRef } from "react";
 import { FaqIcon } from "./CustomIcons";
 import { reportWhatsAppConversion } from "@/lib/gtag";
+import { getWhatsAppUrl } from "@/lib/whatsapp";
 
 export default function FaqSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
   const sectionRef = useRef<HTMLDivElement>(null);
-  const whatsappUrl =
-    "https://wa.me/5593992318885?text=Olá! Tenho algumas dúvidas sobre os serviços da CEVIDA Diagnósticos.";
+  const whatsappUrl = getWhatsAppUrl();
 
   useEffect(() => {
     const observer = new IntersectionObserver(

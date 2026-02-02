@@ -1,10 +1,10 @@
 import { useEffect, useRef } from "react";
 import { reportWhatsAppConversion } from "@/lib/gtag";
+import { getWhatsAppUrl } from "@/lib/whatsapp";
 
 export default function TestimonialsSection() {
   const sectionRef = useRef<HTMLDivElement>(null);
-  const whatsappUrl =
-    "https://wa.me/5593992318885?text=Olá! Vi as avaliações e gostaria de agendar um exame na CEVIDA Diagnósticos.";
+  const whatsappUrl = getWhatsAppUrl();
 
   useEffect(() => {
     const observer = new IntersectionObserver(

@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
 import { reportWhatsAppConversion } from "@/lib/gtag";
+import { getWhatsAppUrl } from "@/lib/whatsapp";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const whatsappUrl =
-    "https://wa.me/5593992318885?text=Olá! Gostaria de agendar um exame na CEVIDA Diagnósticos.";
+  const whatsappUrl = getWhatsAppUrl();
 
   useEffect(() => {
     const handleScroll = () => {

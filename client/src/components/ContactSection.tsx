@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/select";
 import { useToast } from "@/hooks/use-toast";
 import { reportWhatsAppConversion } from "@/lib/gtag";
+import { getWhatsAppUrl } from "@/lib/whatsapp";
 
 export default function ContactSection() {
   const [formData, setFormData] = useState({
@@ -65,8 +66,7 @@ export default function ContactSection() {
       return;
     }
 
-    const message = `Olá! Gostaria de agendar um exame na CEVIDA Diagnósticos.%0A%0ANome: ${encodeURIComponent(formData.name)}%0ATipo de Exame: ${encodeURIComponent(formData.examType)}`;
-    const whatsappUrl = `https://wa.me/5593992318885?text=${message}`;
+    const whatsappUrl = getWhatsAppUrl();
     reportWhatsAppConversion(whatsappUrl, { openInNewTab: true });
 
     // Reset form
@@ -138,7 +138,7 @@ export default function ContactSection() {
       title: "WhatsApp",
       info: ["(93) 99231-8885"],
       gradient: "from-clinic-red to-clinic-red-dark",
-      link: "https://wa.me/5593992318885",
+      link: getWhatsAppUrl(),
     },
     {
       icon: (

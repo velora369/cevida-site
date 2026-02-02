@@ -1,11 +1,13 @@
 import { useEffect, useRef, useState } from "react";
 import { reportWhatsAppConversion } from "@/lib/gtag";
+import { getWhatsAppUrl } from "@/lib/whatsapp";
 
 export default function ServicesSection() {
   const sectionRef = useRef<HTMLDivElement>(null);
+  const whatsappUrl = getWhatsAppUrl();
   const handleWhatsAppClick = (
     event: React.MouseEvent<HTMLAnchorElement>,
-    url: string,
+    url: string = whatsappUrl,
   ) => {
     event.preventDefault();
     reportWhatsAppConversion(url, { openInNewTab: true });
@@ -211,17 +213,12 @@ export default function ServicesSection() {
 
                   {/* CTA */}
                   <a
-                    href={`https://wa.me/5593992318885?text=${encodeURIComponent(service.whatsappText)}`}
+                    href={whatsappUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center text-clinic-red hover:text-red-600 font-semibold text-lg group-hover:scale-105 transition-transform duration-300"
                     data-testid={`service-schedule-${index}`}
-                    onClick={(event) =>
-                      handleWhatsAppClick(
-                        event,
-                        `https://wa.me/5593992318885?text=${encodeURIComponent(service.whatsappText)}`,
-                      )
-                    }
+                    onClick={handleWhatsAppClick}
                   >
                     Agendar Agora
                     <svg
@@ -338,17 +335,12 @@ export default function ServicesSection() {
                 {/* CTA Button */}
                 <div className="flex justify-center">
                   <a
-                    href={`https://wa.me/5593992318885?text=${encodeURIComponent(selectedService.whatsappText)}`}
+                    href={whatsappUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-gradient-to-r from-clinic-red via-red-500 to-red-600 text-white px-8 py-4 rounded-2xl font-semibold text-lg hover:scale-105 hover:shadow-xl hover:shadow-clinic-red/25 transition-all duration-300 inline-flex items-center group"
                     data-testid="modal-schedule-button"
-                    onClick={(event) =>
-                      handleWhatsAppClick(
-                        event,
-                        `https://wa.me/5593992318885?text=${encodeURIComponent(selectedService.whatsappText)}`,
-                      )
-                    }
+                    onClick={handleWhatsAppClick}
                   >
                     <svg
                       className="w-6 h-6 mr-3"
