@@ -29,7 +29,7 @@ export default function FloatingWhatsApp() {
         title="Agendar pelo WhatsApp"
         onClick={(event) => {
           event.preventDefault();
-          reportWhatsAppConversion(whatsappUrl, { openInNewTab: true });
+          reportWhatsAppConversion(whatsappUrl);
         }}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}

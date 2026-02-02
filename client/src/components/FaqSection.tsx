@@ -150,7 +150,7 @@ export default function FaqSection() {
               className="btn-primary inline-flex items-center gap-3"
               onClick={(event) => {
                 event.preventDefault();
-                reportWhatsAppConversion(whatsappUrl, { openInNewTab: true });
+                reportWhatsAppConversion(whatsappUrl);
               }}
             >
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">

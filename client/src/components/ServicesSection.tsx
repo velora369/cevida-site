@@ -10,7 +10,7 @@ export default function ServicesSection() {
     url: string = whatsappUrl,
   ) => {
     event.preventDefault();
-    reportWhatsAppConversion(url, { openInNewTab: true });
+    reportWhatsAppConversion(url);
   };
 
   useEffect(() => {

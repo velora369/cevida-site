@@ -26,7 +26,7 @@ export default function ContactSection() {
   ) => {
     if (!link || !link.includes("wa.me")) return;
     event.preventDefault();
-    reportWhatsAppConversion(link, { openInNewTab: true });
+    reportWhatsAppConversion(link);
   };
 
   useEffect(() => {
@@ -67,7 +67,7 @@ export default function ContactSection() {
     }
 
     const whatsappUrl = getWhatsAppUrl();
-    reportWhatsAppConversion(whatsappUrl, { openInNewTab: true });
+    reportWhatsAppConversion(whatsappUrl);
 
     // Reset form
     setFormData({ name: "", examType: "" });

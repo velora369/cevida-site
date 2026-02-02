@@ -192,7 +192,7 @@ export default function TestimonialsSection() {
               className="bg-gradient-to-r from-clinic-red to-red-500 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-full hover:scale-105 transition-transform duration-300 font-semibold flex items-center space-x-2 text-sm sm:text-base whitespace-nowrap"
               onClick={(event) => {
                 event.preventDefault();
-                reportWhatsAppConversion(whatsappUrl, { openInNewTab: true });
+                reportWhatsAppConversion(whatsappUrl);
               }}
             >
               <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="currentColor" viewBox="0 0 24 24">

@@ -128,7 +128,7 @@ export default function Footer() {
                   className="hover:text-clinic-red transition-colors cursor-pointer"
                   onClick={(event) => {
                     event.preventDefault();
-                    reportWhatsAppConversion(whatsappUrl, { openInNewTab: true });
+                    reportWhatsAppConversion(whatsappUrl);
                   }}
                 >
                   <p>(93) 99231-8885</p>

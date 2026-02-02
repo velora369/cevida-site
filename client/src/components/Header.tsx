@@ -101,7 +101,7 @@ export default function Header() {
               data-testid="header-cta-button"
               onClick={(event) => {
                 event.preventDefault();
-                reportWhatsAppConversion(whatsappUrl, { openInNewTab: true });
+                reportWhatsAppConversion(whatsappUrl);
               }}
             >
               <svg className="w-5 h-5 mr-2 group-hover:rotate-12 transition-transform duration-300" fill="currentColor" viewBox="0 0 24 24">
@@ -172,7 +172,7 @@ export default function Header() {
                 onClick={(event) => {
                   event.preventDefault();
                   setIsMobileMenuOpen(false);
-                  reportWhatsAppConversion(whatsappUrl, { openInNewTab: true });
+                  reportWhatsAppConversion(whatsappUrl);
                 }}
               >
                 <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">

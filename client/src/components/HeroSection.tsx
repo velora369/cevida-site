@@ -96,7 +96,7 @@ export default function HeroSection() {
                 data-testid="hero-cta-button"
                 onClick={(event) => {
                   event.preventDefault();
-                  reportWhatsAppConversion(whatsappUrl, { openInNewTab: true });
+                  reportWhatsAppConversion(whatsappUrl);
                 }}
               >
                 <svg className="w-6 h-6 mr-3 group-hover:rotate-12 transition-transform duration-300" fill="currentColor" viewBox="0 0 24 24">
